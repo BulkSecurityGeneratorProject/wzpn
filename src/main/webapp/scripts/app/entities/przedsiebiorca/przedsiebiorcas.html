@@ -1,0 +1,154 @@
+<div>
+
+    <h2 translate="wzpnApp.przedsiebiorca.home.title">Przedsiebiorca</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#savePrzedsiebiorcaModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="wzpnApp.przedsiebiorca.home.createLabel">Create a new Przedsiebiorca</span>
+    </button>
+    <div class="modal fade" id="savePrzedsiebiorcaModal" tabindex="-1" role="dialog" aria-labelledby="myPrzedsiebiorcaLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="editForm" role="form" novalidate ng-submit="create()">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myPrzedsiebiorcaLabel" translate="wzpnApp.przedsiebiorca.home.createOrEditLabel">Create or edit a Przedsiebiorca</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="przedsiebiorca.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="wzpnApp.przedsiebiorca.nazwa">Nazwa</label>
+                            <input type="text" class="form-control" name="nazwa"
+                                   ng-model="przedsiebiorca.nazwa">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.przedsiebiorca.adres">Adres</label>
+                            <input type="text" class="form-control" name="adres"
+                                   ng-model="przedsiebiorca.adres">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.przedsiebiorca.miejscowosc">Miejscowosc</label>
+                            <input type="text" class="form-control" name="miejscowosc"
+                                   ng-model="przedsiebiorca.miejscowosc">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.przedsiebiorca.kodPocztowy">KodPocztowy</label>
+                            <input type="text" class="form-control" name="kodPocztowy"
+                                   ng-model="przedsiebiorca.kodPocztowy">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.przedsiebiorca.nip">Nip</label>
+                            <input type="text" class="form-control" name="nip"
+                                   ng-model="przedsiebiorca.nip">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.przedsiebiorca.email">Email</label>
+                            <input type="text" class="form-control" name="email"
+                                   ng-model="przedsiebiorca.email">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.przedsiebiorca.telefon">Telefon</label>
+                            <input type="text" class="form-control" name="telefon"
+                                   ng-model="przedsiebiorca.telefon">
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deletePrzedsiebiorcaConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(przedsiebiorca.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="wzpnApp.przedsiebiorca.delete.question" translate-values="{id: '{{przedsiebiorca.id}}'}">Are you sure you want to delete this Przedsiebiorca?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="wzpnApp.przedsiebiorca.nazwa">Nazwa</th>
+                    <th translate="wzpnApp.przedsiebiorca.adres">Adres</th>
+                    <th translate="wzpnApp.przedsiebiorca.miejscowosc">Miejscowosc</th>
+                    <th translate="wzpnApp.przedsiebiorca.kodPocztowy">KodPocztowy</th>
+                    <th translate="wzpnApp.przedsiebiorca.nip">Nip</th>
+                    <th translate="wzpnApp.przedsiebiorca.email">Email</th>
+                    <th translate="wzpnApp.przedsiebiorca.telefon">Telefon</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="przedsiebiorca in przedsiebiorcas">
+                    <td><a ui-sref="przedsiebiorcaDetail({id:przedsiebiorca.id})">{{przedsiebiorca.id}}</a></td>
+                    <td>{{przedsiebiorca.nazwa}}</td>
+                    <td>{{przedsiebiorca.adres}}</td>
+                    <td>{{przedsiebiorca.miejscowosc}}</td>
+                    <td>{{przedsiebiorca.kodPocztowy}}</td>
+                    <td>{{przedsiebiorca.nip}}</td>
+                    <td>{{przedsiebiorca.email}}</td>
+                    <td>{{przedsiebiorca.telefon}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="przedsiebiorcaDetail({id:przedsiebiorca.id})"
+                                class="btn btn-info">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="update(przedsiebiorca.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(przedsiebiorca.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

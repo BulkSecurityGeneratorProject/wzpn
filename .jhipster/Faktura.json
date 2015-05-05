@@ -1,0 +1,81 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "sprzedawca",
+            "relationshipNameCapitalized": "Sprzedawca",
+            "relationshipFieldName": "sprzedawca",
+            "otherEntityName": "przedsiebiorca",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Przedsiebiorca",
+            "otherEntityField": "nazwa"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "nabywca",
+            "relationshipNameCapitalized": "Nabywca",
+            "relationshipFieldName": "nabywca",
+            "otherEntityName": "przedsiebiorca",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Przedsiebiorca",
+            "otherEntityField": "nazwa"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "pozycjaFaktury",
+            "relationshipNameCapitalized": "PozycjaFaktury",
+            "relationshipFieldName": "pozycjaFaktury",
+            "otherEntityName": "pozycjaFaktury",
+            "relationshipType": "one-to-many",
+            "otherEntityNameCapitalized": "PozycjaFaktury"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nazwa",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Nazwa",
+            "fieldNameUnderscored": "nazwa",
+            "fieldInJavaBeanMethod": "Nazwa",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "dataWystawienia",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "DataWystawienia",
+            "fieldNameUnderscored": "data_wystawienia",
+            "fieldInJavaBeanMethod": "DataWystawienia",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "dataSprzedazy",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "DataSprzedazy",
+            "fieldNameUnderscored": "data_sprzedazy",
+            "fieldInJavaBeanMethod": "DataSprzedazy",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "miejscowosc",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Miejscowosc",
+            "fieldNameUnderscored": "miejscowosc",
+            "fieldInJavaBeanMethod": "Miejscowosc",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": true,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": true,
+    "fieldsContainDate": false,
+    "changelogDate": "20150505230641",
+    "pagination": "pager",
+    "validation": false
+}

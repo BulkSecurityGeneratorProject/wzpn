@@ -1,0 +1,78 @@
+
+<div>
+    <h2><span translate="wzpnApp.przedsiebiorca.detail.title">Przedsiebiorca</span> {{przedsiebiorca.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.przedsiebiorca.nazwa">Nazwa</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{przedsiebiorca.nazwa}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.przedsiebiorca.adres">Adres</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{przedsiebiorca.adres}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.przedsiebiorca.miejscowosc">Miejscowosc</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{przedsiebiorca.miejscowosc}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.przedsiebiorca.kodPocztowy">KodPocztowy</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{przedsiebiorca.kodPocztowy}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.przedsiebiorca.nip">Nip</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{przedsiebiorca.nip}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.przedsiebiorca.email">Email</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{przedsiebiorca.email}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.przedsiebiorca.telefon">Telefon</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{przedsiebiorca.telefon}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="przedsiebiorca"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

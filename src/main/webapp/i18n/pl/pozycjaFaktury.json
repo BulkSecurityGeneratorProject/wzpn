@@ -1,0 +1,22 @@
+{
+    "wzpnApp": {
+        "pozycjaFaktury" : {
+            "home": {
+                "title": "PozycjaFaktury",
+                "createLabel": "Dodaj PozycjaFaktury",
+                "createOrEditLabel": "Dodaj lub edytuj: PozycjaFaktury"
+            },
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć PozycjaFaktury {{ id }}?"
+            },
+            "detail": {
+                "title": "PozycjaFaktury"
+            },
+            "nazwa": "Nazwa",
+            "brutto": "Brutto",
+            "ilosc": "Ilosc",
+            "podatek": "Podatek",
+            "faktura": "faktura"
+        }
+    }
+}

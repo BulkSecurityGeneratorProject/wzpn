@@ -1,0 +1,137 @@
+<div>
+
+    <h2 translate="wzpnApp.pozycjaFaktury.home.title">PozycjaFaktury</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#savePozycjaFakturyModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="wzpnApp.pozycjaFaktury.home.createLabel">Create a new PozycjaFaktury</span>
+    </button>
+    <div class="modal fade" id="savePozycjaFakturyModal" tabindex="-1" role="dialog" aria-labelledby="myPozycjaFakturyLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="editForm" role="form" novalidate ng-submit="create()">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myPozycjaFakturyLabel" translate="wzpnApp.pozycjaFaktury.home.createOrEditLabel">Create or edit a PozycjaFaktury</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="pozycjaFaktury.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="wzpnApp.pozycjaFaktury.nazwa">Nazwa</label>
+                            <input type="text" class="form-control" name="nazwa"
+                                   ng-model="pozycjaFaktury.nazwa">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pozycjaFaktury.brutto">Brutto</label>
+                            <input type="number" class="form-control" name="brutto"
+                                   ng-model="pozycjaFaktury.brutto">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pozycjaFaktury.ilosc">Ilosc</label>
+                            <input type="number" class="form-control" name="ilosc"
+                                   ng-model="pozycjaFaktury.ilosc">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pozycjaFaktury.podatek">Podatek</label>
+                            <input type="number" class="form-control" name="podatek"
+                                   ng-model="pozycjaFaktury.podatek">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="wzpnApp.pozycjaFaktury.faktura">faktura</label>
+                            <select class="form-control" name="faktura" ng-model="pozycjaFaktury.faktura.id" ng-options="faktura.id as faktura.id for faktura in fakturas">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deletePozycjaFakturyConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(pozycjaFaktury.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="wzpnApp.pozycjaFaktury.delete.question" translate-values="{id: '{{pozycjaFaktury.id}}'}">Are you sure you want to delete this PozycjaFaktury?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="wzpnApp.pozycjaFaktury.nazwa">Nazwa</th>
+                    <th translate="wzpnApp.pozycjaFaktury.brutto">Brutto</th>
+                    <th translate="wzpnApp.pozycjaFaktury.ilosc">Ilosc</th>
+                    <th translate="wzpnApp.pozycjaFaktury.podatek">Podatek</th>
+                    <th translate="wzpnApp.pozycjaFaktury.faktura">faktura</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="pozycjaFaktury in pozycjaFakturys">
+                    <td><a ui-sref="pozycjaFakturyDetail({id:pozycjaFaktury.id})">{{pozycjaFaktury.id}}</a></td>
+                    <td>{{pozycjaFaktury.nazwa}}</td>
+                    <td>{{pozycjaFaktury.brutto}}</td>
+                    <td>{{pozycjaFaktury.ilosc}}</td>
+                    <td>{{pozycjaFaktury.podatek}}</td>
+                    <td>{{pozycjaFaktury.faktura.id}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="pozycjaFakturyDetail({id:pozycjaFaktury.id})"
+                                class="btn btn-info">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="update(pozycjaFaktury.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(pozycjaFaktury.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,70 @@
+
+<div>
+    <h2><span translate="wzpnApp.faktura.detail.title">Faktura</span> {{faktura.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.faktura.nazwa">Nazwa</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{faktura.nazwa}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.faktura.dataWystawienia">DataWystawienia</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{faktura.dataWystawienia}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.faktura.dataSprzedazy">DataSprzedazy</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{faktura.dataSprzedazy}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.faktura.miejscowosc">Miejscowosc</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{faktura.miejscowosc}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.faktura.sprzedawca">sprzedawca</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{faktura.sprzedawca.nazwa}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.faktura.nabywca">nabywca</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{faktura.nabywca.nazwa}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="faktura"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

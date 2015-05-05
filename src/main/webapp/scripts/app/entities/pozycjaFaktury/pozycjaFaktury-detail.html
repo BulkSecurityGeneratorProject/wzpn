@@ -1,0 +1,62 @@
+
+<div>
+    <h2><span translate="wzpnApp.pozycjaFaktury.detail.title">PozycjaFaktury</span> {{pozycjaFaktury.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.pozycjaFaktury.nazwa">Nazwa</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{pozycjaFaktury.nazwa}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.pozycjaFaktury.brutto">Brutto</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{pozycjaFaktury.brutto}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.pozycjaFaktury.ilosc">Ilosc</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{pozycjaFaktury.ilosc}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.pozycjaFaktury.podatek">Podatek</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{pozycjaFaktury.podatek}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.pozycjaFaktury.faktura">faktura</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{pozycjaFaktury.faktura.id}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="pozycjaFaktury"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

@@ -1,0 +1,24 @@
+{
+    "wzpnApp": {
+        "faktura" : {
+            "home": {
+                "title": "Fakturas",
+                "createLabel": "Create a new Faktura",
+                "createOrEditLabel": "Create or edit a Faktura"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Faktura {{ id }}?"
+            },
+            "detail": {
+                "title": "Faktura"
+            },
+            "nazwa": "Nazwa",
+            "dataWystawienia": "DataWystawienia",
+            "dataSprzedazy": "DataSprzedazy",
+            "miejscowosc": "Miejscowosc",
+            "sprzedawca": "sprzedawca",
+            "nabywca": "nabywca",
+            "pozycjaFaktury": "pozycjaFaktury"
+        }
+    }
+}

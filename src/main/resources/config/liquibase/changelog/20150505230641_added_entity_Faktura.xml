@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <!--
+        Added the entity Faktura.
+    -->
+    <changeSet id="20150505230641" author="jhipster">
+        <createTable tableName="FAKTURA">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="nazwa" type="varchar(255)"/>
+            <column name="data_wystawienia" type="timestamp"/>
+            <column name="data_sprzedazy" type="timestamp"/>
+            <column name="miejscowosc" type="varchar(255)"/>
+            <column name="sprzedawca_id" type="bigint"/>
+            <column name="nabywca_id" type="bigint"/>
+        </createTable>
+        <dropDefaultValue tableName="FAKTURA" columnName="data_wystawienia" columnDataType="datetime"/>
+
+        <dropDefaultValue tableName="FAKTURA" columnName="data_sprzedazy" columnDataType="datetime"/>
+
+        
+        <addForeignKeyConstraint baseColumnNames="sprzedawca_id"
+                                 baseTableName="FAKTURA"
+                                 constraintName="fk_faktura_sprzedawca_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="PRZEDSIEBIORCA"/>
+
+        <addForeignKeyConstraint baseColumnNames="nabywca_id"
+                                 baseTableName="FAKTURA"
+                                 constraintName="fk_faktura_nabywca_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="PRZEDSIEBIORCA"/>
+
+    </changeSet>
+</databaseChangeLog>

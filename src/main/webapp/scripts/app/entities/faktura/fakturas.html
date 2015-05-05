@@ -1,0 +1,152 @@
+<div>
+
+    <h2 translate="wzpnApp.faktura.home.title">Faktura</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveFakturaModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="wzpnApp.faktura.home.createLabel">Create a new Faktura</span>
+    </button>
+    <div class="modal fade" id="saveFakturaModal" tabindex="-1" role="dialog" aria-labelledby="myFakturaLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="editForm" role="form" novalidate ng-submit="create()">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myFakturaLabel" translate="wzpnApp.faktura.home.createOrEditLabel">Create or edit a Faktura</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="faktura.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="wzpnApp.faktura.nazwa">Nazwa</label>
+                            <input type="text" class="form-control" name="nazwa"
+                                   ng-model="faktura.nazwa">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.faktura.dataWystawienia">DataWystawienia</label>
+                            <input type="datetime-local" class="form-control" name="dataWystawienia"
+                                   ng-model="faktura.dataWystawienia" ng-model-options="{timezone: 'UTC'}">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.faktura.dataSprzedazy">DataSprzedazy</label>
+                            <input type="datetime-local" class="form-control" name="dataSprzedazy"
+                                   ng-model="faktura.dataSprzedazy" ng-model-options="{timezone: 'UTC'}">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.faktura.miejscowosc">Miejscowosc</label>
+                            <input type="text" class="form-control" name="miejscowosc"
+                                   ng-model="faktura.miejscowosc">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="wzpnApp.faktura.sprzedawca">sprzedawca</label>
+                            <select class="form-control" name="sprzedawca" ng-model="faktura.sprzedawca.id" ng-options="przedsiebiorca.id as przedsiebiorca.nazwa for przedsiebiorca in przedsiebiorcas">
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.faktura.nabywca">nabywca</label>
+                            <select class="form-control" name="nabywca" ng-model="faktura.nabywca.id" ng-options="przedsiebiorca.id as przedsiebiorca.nazwa for przedsiebiorca in przedsiebiorcas">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteFakturaConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(faktura.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="wzpnApp.faktura.delete.question" translate-values="{id: '{{faktura.id}}'}">Are you sure you want to delete this Faktura?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="wzpnApp.faktura.nazwa">Nazwa</th>
+                    <th translate="wzpnApp.faktura.dataWystawienia">DataWystawienia</th>
+                    <th translate="wzpnApp.faktura.dataSprzedazy">DataSprzedazy</th>
+                    <th translate="wzpnApp.faktura.miejscowosc">Miejscowosc</th>
+                    <th translate="wzpnApp.faktura.sprzedawca">sprzedawca</th>
+                    <th translate="wzpnApp.faktura.nabywca">nabywca</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="faktura in fakturas">
+                    <td><a ui-sref="fakturaDetail({id:faktura.id})">{{faktura.id}}</a></td>
+                    <td>{{faktura.nazwa}}</td>
+                    <td>{{faktura.dataWystawienia}}</td>
+                    <td>{{faktura.dataSprzedazy}}</td>
+                    <td>{{faktura.miejscowosc}}</td>
+                    <td>{{faktura.sprzedawca.nazwa}}</td>
+                    <td>{{faktura.nabywca.nazwa}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="fakturaDetail({id:faktura.id})"
+                                class="btn btn-info">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="update(faktura.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(faktura.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <nav>
+            <ul class="pager">
+                <li ng-show="links['first']" ng-click="loadPage(links['first'])"><a href="#">&lt;&lt;</a></li>
+                <li ng-show="links['prev']" ng-click="loadPage(links['prev'])"><a href="#">&lt;</a></li>
+                <li ng-show="links['next']" ng-click="loadPage(links['next'])"><a href="#">&gt;</a></li>
+                <li ng-show="links['last']" ng-click="loadPage(links['last'])"><a href="#">&gt;&gt;</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>

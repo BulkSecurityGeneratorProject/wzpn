@@ -12,6 +12,9 @@
                 "obiektSportowy": "ObiektSportowy",
                 "grafik": "Grafik",
                 "wynik": "Wynik",
+                "przedsiebiorca": "Przedsiebiorca",
+                "faktura": "Faktura",
+                "pozycjaFaktury": "PozycjaFaktury",
                 "additionalEntity": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {

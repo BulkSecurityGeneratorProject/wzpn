@@ -1,0 +1,62 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "faktura",
+            "relationshipNameCapitalized": "Faktura",
+            "relationshipFieldName": "faktura",
+            "otherEntityName": "faktura",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Faktura",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nazwa",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Nazwa",
+            "fieldNameUnderscored": "nazwa",
+            "fieldInJavaBeanMethod": "Nazwa",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "brutto",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Brutto",
+            "fieldNameUnderscored": "brutto",
+            "fieldInJavaBeanMethod": "Brutto",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "ilosc",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Ilosc",
+            "fieldNameUnderscored": "ilosc",
+            "fieldInJavaBeanMethod": "Ilosc",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "podatek",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Podatek",
+            "fieldNameUnderscored": "podatek",
+            "fieldInJavaBeanMethod": "Podatek",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": true,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150505230945",
+    "pagination": "no",
+    "validation": false
+}

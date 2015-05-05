@@ -1,0 +1,26 @@
+{
+    "wzpnApp": {
+        "przedsiebiorca" : {
+            "home": {
+                "title": "Przedsiebiorca",
+                "createLabel": "Dodaj Przedsiebiorca",
+                "createOrEditLabel": "Dodaj lub edytuj: Przedsiebiorca"
+            },
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Przedsiebiorca {{ id }}?"
+            },
+            "detail": {
+                "title": "Przedsiebiorca"
+            },
+            "nazwa": "Nazwa",
+            "adres": "Adres",
+            "miejscowosc": "Miejscowosc",
+            "kodPocztowy": "KodPocztowy",
+            "nip": "Nip",
+            "email": "Email",
+            "telefon": "Telefon",
+            "sprzedawca": "sprzedawca",
+            "nabywca": "nabywca"
+        }
+    }
+}

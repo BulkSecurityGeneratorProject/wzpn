@@ -11,5 +11,8 @@
     <include file="classpath:config/liquibase/changelog/20150505220328_added_entity_ObiektSportowy.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20150505221048_added_entity_Grafik.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20150505221716_added_entity_Wynik.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150505230422_added_entity_Przedsiebiorca.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150505230641_added_entity_Faktura.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150505230945_added_entity_PozycjaFaktury.xml" relativeToChangelogFile="false"/>
     <!-- JHipster will add liquibase changelogs here -->
 </databaseChangeLog>
