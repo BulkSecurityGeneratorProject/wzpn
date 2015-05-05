@@ -1,0 +1,60 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nazwaOdbiorcy",
+            "fieldType": "String",
+            "fieldNameCapitalized": "NazwaOdbiorcy",
+            "fieldNameUnderscored": "nazwa_odbiorcy",
+            "fieldInJavaBeanMethod": "NazwaOdbiorcy",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "nazwaZleceniodawcy",
+            "fieldType": "String",
+            "fieldNameCapitalized": "NazwaZleceniodawcy",
+            "fieldNameUnderscored": "nazwa_zleceniodawcy",
+            "fieldInJavaBeanMethod": "NazwaZleceniodawcy",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "rachunek",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Rachunek",
+            "fieldNameUnderscored": "rachunek",
+            "fieldInJavaBeanMethod": "Rachunek",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "tytul",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Tytul",
+            "fieldNameUnderscored": "tytul",
+            "fieldInJavaBeanMethod": "Tytul",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "kwota",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Kwota",
+            "fieldNameUnderscored": "kwota",
+            "fieldInJavaBeanMethod": "Kwota",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": true,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150505232407",
+    "pagination": "pager",
+    "validation": false
+}

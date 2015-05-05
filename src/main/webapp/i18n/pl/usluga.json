@@ -1,0 +1,21 @@
+{
+    "wzpnApp": {
+        "usluga" : {
+            "home": {
+                "title": "Usluga",
+                "createLabel": "Dodaj Usluga",
+                "createOrEditLabel": "Dodaj lub edytuj: Usluga"
+            },
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Usluga {{ id }}?"
+            },
+            "detail": {
+                "title": "Usluga"
+            },
+            "nazwa": "Nazwa",
+            "cena": "Cena",
+            "podatek": "Podatek",
+            "usunieta": "Usunieta"
+        }
+    }
+}

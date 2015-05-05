@@ -1,0 +1,22 @@
+{
+    "wzpnApp": {
+        "polecenieZaplaty" : {
+            "home": {
+                "title": "PolecenieZaplatys",
+                "createLabel": "Create a new PolecenieZaplaty",
+                "createOrEditLabel": "Create or edit a PolecenieZaplaty"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete PolecenieZaplaty {{ id }}?"
+            },
+            "detail": {
+                "title": "PolecenieZaplaty"
+            },
+            "nazwaOdbiorcy": "NazwaOdbiorcy",
+            "nazwaZleceniodawcy": "NazwaZleceniodawcy",
+            "rachunek": "Rachunek",
+            "tytul": "Tytul",
+            "kwota": "Kwota"
+        }
+    }
+}

@@ -1,0 +1,51 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nazwa",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Nazwa",
+            "fieldNameUnderscored": "nazwa",
+            "fieldInJavaBeanMethod": "Nazwa",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "cena",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Cena",
+            "fieldNameUnderscored": "cena",
+            "fieldInJavaBeanMethod": "Cena",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "podatek",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Podatek",
+            "fieldNameUnderscored": "podatek",
+            "fieldInJavaBeanMethod": "Podatek",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "usunieta",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "Usunieta",
+            "fieldNameUnderscored": "usunieta",
+            "fieldInJavaBeanMethod": "Usunieta",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": true,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150505231555",
+    "pagination": "no",
+    "validation": false
+}

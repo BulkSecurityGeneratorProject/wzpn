@@ -1,0 +1,62 @@
+
+<div>
+    <h2><span translate="wzpnApp.polecenieZaplaty.detail.title">PolecenieZaplaty</span> {{polecenieZaplaty.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.polecenieZaplaty.nazwaOdbiorcy">NazwaOdbiorcy</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{polecenieZaplaty.nazwaOdbiorcy}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.polecenieZaplaty.nazwaZleceniodawcy">NazwaZleceniodawcy</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{polecenieZaplaty.nazwaZleceniodawcy}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.polecenieZaplaty.rachunek">Rachunek</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{polecenieZaplaty.rachunek}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.polecenieZaplaty.tytul">Tytul</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{polecenieZaplaty.tytul}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.polecenieZaplaty.kwota">Kwota</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{polecenieZaplaty.kwota}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="polecenieZaplaty"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>
