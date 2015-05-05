@@ -1,0 +1,32 @@
+{
+    "wzpnApp": {
+        "druzyna" : {
+            "home": {
+                "title": "Druzynas",
+                "createLabel": "Créer un nouveau Druzyna",
+                "createOrEditLabel": "Créer ou éditer un Druzyna"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Druzyna {{ id }} ?"
+            },
+            "detail": {
+                "title": "Druzyna"
+            },
+            "nazwa": "Nazwa",
+            "usunieta": "Usunieta",
+            "zawieszona": "Zawieszona",
+            "prezes": "Prezes",
+            "adres": "Adres",
+            "telefon": "Telefon",
+            "email": "Email",
+            "strona": "Strona",
+            "trenerzy": "Trenerzy",
+            "opis": "Opis",
+            "liga": "liga",
+            "kara": "kara",
+            "pierwszaDruzyna": "pierwszaDruzyna",
+            "drugaDruzyna": "drugaDruzyna"
+        }
+    }
+}
+

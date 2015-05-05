@@ -1,0 +1,83 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "pierwszaDruzyna",
+            "relationshipNameCapitalized": "PierwszaDruzyna",
+            "relationshipFieldName": "pierwszaDruzyna",
+            "otherEntityName": "druzyna",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Druzyna",
+            "otherEntityField": "nazwa"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "drugaDruzyna",
+            "relationshipNameCapitalized": "DrugaDruzyna",
+            "relationshipFieldName": "drugaDruzyna",
+            "otherEntityName": "druzyna",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Druzyna",
+            "otherEntityField": "nazwa"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "obiektSportowy",
+            "relationshipNameCapitalized": "ObiektSportowy",
+            "relationshipFieldName": "obiektSportowy",
+            "otherEntityName": "obiektSportowy",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "ObiektSportowy",
+            "otherEntityField": "nazwa"
+        },
+        {
+            "relationshipId": 4,
+            "relationshipName": "wynik",
+            "relationshipNameCapitalized": "Wynik",
+            "relationshipFieldName": "wynik",
+            "otherEntityName": "wynik",
+            "relationshipType": "one-to-one",
+            "otherEntityNameCapitalized": "Wynik",
+            "ownerSide": false
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nazwa",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Nazwa",
+            "fieldNameUnderscored": "nazwa",
+            "fieldInJavaBeanMethod": "Nazwa",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "opis",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Opis",
+            "fieldNameUnderscored": "opis",
+            "fieldInJavaBeanMethod": "Opis",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "rozpoczecie",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "Rozpoczecie",
+            "fieldNameUnderscored": "rozpoczecie",
+            "fieldInJavaBeanMethod": "Rozpoczecie",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": true,
+    "fieldsContainDate": false,
+    "changelogDate": "20150505221048",
+    "pagination": "pager",
+    "validation": false
+}

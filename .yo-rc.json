@@ -1,0 +1,19 @@
+{
+  "generator-jhipster": {
+    "baseName": "wzpn",
+    "packageName": "com.example.wzpn",
+    "packageFolder": "com/example/wzpn",
+    "authenticationType": "session",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "useCompass": false,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "javaVersion": "8",
+    "rememberMeKey": "184941e1e67e1fa89b23fa2a6409ca78d9e8880c"
+  }
+}

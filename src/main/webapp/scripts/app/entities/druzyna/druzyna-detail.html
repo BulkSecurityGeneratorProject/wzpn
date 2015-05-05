@@ -1,0 +1,110 @@
+
+<div>
+    <h2><span translate="wzpnApp.druzyna.detail.title">Druzyna</span> {{druzyna.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.druzyna.nazwa">Nazwa</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{druzyna.nazwa}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.druzyna.usunieta">Usunieta</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{druzyna.usunieta}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.druzyna.zawieszona">Zawieszona</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{druzyna.zawieszona}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.druzyna.prezes">Prezes</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{druzyna.prezes}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.druzyna.adres">Adres</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{druzyna.adres}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.druzyna.telefon">Telefon</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{druzyna.telefon}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.druzyna.email">Email</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{druzyna.email}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.druzyna.strona">Strona</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{druzyna.strona}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.druzyna.trenerzy">Trenerzy</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{druzyna.trenerzy}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.druzyna.opis">Opis</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{druzyna.opis}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.druzyna.liga">liga</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{druzyna.liga.nazwa}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="druzyna"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

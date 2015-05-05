@@ -1,0 +1,70 @@
+
+<div>
+    <h2><span translate="wzpnApp.grafik.detail.title">Grafik</span> {{grafik.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.grafik.nazwa">Nazwa</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{grafik.nazwa}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.grafik.opis">Opis</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{grafik.opis}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.grafik.rozpoczecie">Rozpoczecie</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{grafik.rozpoczecie}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.grafik.pierwszaDruzyna">pierwszaDruzyna</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{grafik.pierwszaDruzyna.nazwa}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.grafik.drugaDruzyna">drugaDruzyna</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{grafik.drugaDruzyna.nazwa}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.grafik.obiektSportowy">obiektSportowy</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{grafik.obiektSportowy.nazwa}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="grafik"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

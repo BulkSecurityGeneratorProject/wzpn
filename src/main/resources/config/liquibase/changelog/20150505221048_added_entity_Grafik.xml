@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <!--
+        Added the entity Grafik.
+    -->
+    <changeSet id="20150505221048" author="jhipster">
+        <createTable tableName="GRAFIK">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="nazwa" type="varchar(255)"/>
+            <column name="opis" type="varchar(255)"/>
+            <column name="rozpoczecie" type="timestamp"/>
+            <column name="pierwszadruzyna_id" type="bigint"/>
+            <column name="drugadruzyna_id" type="bigint"/>
+            <column name="obiektsportowy_id" type="bigint"/>
+        </createTable>
+        <dropDefaultValue tableName="GRAFIK" columnName="rozpoczecie" columnDataType="datetime"/>
+
+        
+        <addForeignKeyConstraint baseColumnNames="pierwszadruzyna_id"
+                                 baseTableName="GRAFIK"
+                                 constraintName="fk_grafik_pierwszadruzyna_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="DRUZYNA"/>
+
+        <addForeignKeyConstraint baseColumnNames="drugadruzyna_id"
+                                 baseTableName="GRAFIK"
+                                 constraintName="fk_grafik_drugadruzyna_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="DRUZYNA"/>
+
+        <addForeignKeyConstraint baseColumnNames="obiektsportowy_id"
+                                 baseTableName="GRAFIK"
+                                 constraintName="fk_grafik_obiektsportowy_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="OBIEKTSPORTOWY"/>
+
+    </changeSet>
+</databaseChangeLog>

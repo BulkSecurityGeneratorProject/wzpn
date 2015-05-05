@@ -1,0 +1,21 @@
+{
+    "wzpnApp": {
+        "kara" : {
+            "home": {
+                "title": "Kara",
+                "createLabel": "Dodaj Kara",
+                "createOrEditLabel": "Dodaj lub edytuj: Kara"
+            },
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Kara {{ id }}?"
+            },
+            "detail": {
+                "title": "Kara"
+            },
+            "dataOtrzymania": "DataOtrzymania",
+            "powod": "Powod",
+            "kwota": "Kwota",
+            "druzyna": "druzyna"
+        }
+    }
+}

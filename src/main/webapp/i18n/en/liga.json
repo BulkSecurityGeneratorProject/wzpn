@@ -1,0 +1,20 @@
+{
+    "wzpnApp": {
+        "liga" : {
+            "home": {
+                "title": "Ligas",
+                "createLabel": "Create a new Liga",
+                "createOrEditLabel": "Create or edit a Liga"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Liga {{ id }}?"
+            },
+            "detail": {
+                "title": "Liga"
+            },
+            "nazwa": "Nazwa",
+            "opis": "Opis",
+            "druzyna": "druzyna"
+        }
+    }
+}

@@ -1,0 +1,98 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "grafik",
+            "relationshipNameCapitalized": "Grafik",
+            "relationshipFieldName": "grafik",
+            "otherEntityName": "grafik",
+            "relationshipType": "one-to-one",
+            "otherEntityNameCapitalized": "Grafik",
+            "ownerSide": true
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "wynik",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Wynik",
+            "fieldNameUnderscored": "wynik",
+            "fieldInJavaBeanMethod": "Wynik",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "bramkiPierwszej",
+            "fieldType": "String",
+            "fieldNameCapitalized": "BramkiPierwszej",
+            "fieldNameUnderscored": "bramki_pierwszej",
+            "fieldInJavaBeanMethod": "BramkiPierwszej",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "bramkiDrugiej",
+            "fieldType": "String",
+            "fieldNameCapitalized": "BramkiDrugiej",
+            "fieldNameUnderscored": "bramki_drugiej",
+            "fieldInJavaBeanMethod": "BramkiDrugiej",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "zoltePierwszej",
+            "fieldType": "String",
+            "fieldNameCapitalized": "ZoltePierwszej",
+            "fieldNameUnderscored": "zolte_pierwszej",
+            "fieldInJavaBeanMethod": "ZoltePierwszej",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "zolteDrugiej",
+            "fieldType": "String",
+            "fieldNameCapitalized": "ZolteDrugiej",
+            "fieldNameUnderscored": "zolte_drugiej",
+            "fieldInJavaBeanMethod": "ZolteDrugiej",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "czerwonePierwszej",
+            "fieldType": "String",
+            "fieldNameCapitalized": "CzerwonePierwszej",
+            "fieldNameUnderscored": "czerwone_pierwszej",
+            "fieldInJavaBeanMethod": "CzerwonePierwszej",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "czerwoneDrugiej",
+            "fieldType": "String",
+            "fieldNameCapitalized": "CzerwoneDrugiej",
+            "fieldNameUnderscored": "czerwone_drugiej",
+            "fieldInJavaBeanMethod": "CzerwoneDrugiej",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "uwagi",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Uwagi",
+            "fieldNameUnderscored": "uwagi",
+            "fieldInJavaBeanMethod": "Uwagi",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150505221716",
+    "pagination": "pager",
+    "validation": false
+}

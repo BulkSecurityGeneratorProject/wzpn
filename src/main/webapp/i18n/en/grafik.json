@@ -1,0 +1,24 @@
+{
+    "wzpnApp": {
+        "grafik" : {
+            "home": {
+                "title": "Grafiks",
+                "createLabel": "Create a new Grafik",
+                "createOrEditLabel": "Create or edit a Grafik"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Grafik {{ id }}?"
+            },
+            "detail": {
+                "title": "Grafik"
+            },
+            "nazwa": "Nazwa",
+            "opis": "Opis",
+            "rozpoczecie": "Rozpoczecie",
+            "pierwszaDruzyna": "pierwszaDruzyna",
+            "drugaDruzyna": "drugaDruzyna",
+            "obiektSportowy": "obiektSportowy",
+            "wynik": "wynik"
+        }
+    }
+}

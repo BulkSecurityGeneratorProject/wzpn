@@ -1,0 +1,32 @@
+{
+    "wzpnApp": {
+        "obiektSportowy" : {
+            "home": {
+                "title": "ObiektSportowys",
+                "createLabel": "Créer un nouveau ObiektSportowy",
+                "createOrEditLabel": "Créer ou éditer un ObiektSportowy"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le ObiektSportowy {{ id }} ?"
+            },
+            "detail": {
+                "title": "ObiektSportowy"
+            },
+            "nazwa": "Nazwa",
+            "aktywny": "Aktywny",
+            "miasto": "Miasto",
+            "kodPocztowy": "KodPocztowy",
+            "ulica": "Ulica",
+            "telefon": "Telefon",
+            "prezes": "Prezes",
+            "strona": "Strona",
+            "miejscaSiedzace": "MiejscaSiedzace",
+            "miejscaStojace": "MiejscaStojace",
+            "kryty": "Kryty",
+            "oswietlenie": "Oswietlenie",
+            "wymiary": "Wymiary",
+            "grafik": "grafik"
+        }
+    }
+}
+

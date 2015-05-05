@@ -1,0 +1,142 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "grafik",
+            "relationshipNameCapitalized": "Grafik",
+            "relationshipFieldName": "grafik",
+            "otherEntityName": "grafik",
+            "relationshipType": "one-to-many",
+            "otherEntityNameCapitalized": "Grafik"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nazwa",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Nazwa",
+            "fieldNameUnderscored": "nazwa",
+            "fieldInJavaBeanMethod": "Nazwa",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "aktywny",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "Aktywny",
+            "fieldNameUnderscored": "aktywny",
+            "fieldInJavaBeanMethod": "Aktywny",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "miasto",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Miasto",
+            "fieldNameUnderscored": "miasto",
+            "fieldInJavaBeanMethod": "Miasto",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "kodPocztowy",
+            "fieldType": "String",
+            "fieldNameCapitalized": "KodPocztowy",
+            "fieldNameUnderscored": "kod_pocztowy",
+            "fieldInJavaBeanMethod": "KodPocztowy",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "ulica",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Ulica",
+            "fieldNameUnderscored": "ulica",
+            "fieldInJavaBeanMethod": "Ulica",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "telefon",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Telefon",
+            "fieldNameUnderscored": "telefon",
+            "fieldInJavaBeanMethod": "Telefon",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "prezes",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Prezes",
+            "fieldNameUnderscored": "prezes",
+            "fieldInJavaBeanMethod": "Prezes",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "strona",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Strona",
+            "fieldNameUnderscored": "strona",
+            "fieldInJavaBeanMethod": "Strona",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 9,
+            "fieldName": "miejscaSiedzace",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "MiejscaSiedzace",
+            "fieldNameUnderscored": "miejsca_siedzace",
+            "fieldInJavaBeanMethod": "MiejscaSiedzace",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 10,
+            "fieldName": "miejscaStojace",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "MiejscaStojace",
+            "fieldNameUnderscored": "miejsca_stojace",
+            "fieldInJavaBeanMethod": "MiejscaStojace",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 11,
+            "fieldName": "kryty",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "Kryty",
+            "fieldNameUnderscored": "kryty",
+            "fieldInJavaBeanMethod": "Kryty",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 12,
+            "fieldName": "oswietlenie",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "Oswietlenie",
+            "fieldNameUnderscored": "oswietlenie",
+            "fieldInJavaBeanMethod": "Oswietlenie",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 13,
+            "fieldName": "wymiary",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Wymiary",
+            "fieldNameUnderscored": "wymiary",
+            "fieldInJavaBeanMethod": "Wymiary",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": true,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150505220328",
+    "pagination": "no",
+    "validation": false
+}

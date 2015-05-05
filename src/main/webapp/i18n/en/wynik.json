@@ -1,0 +1,26 @@
+{
+    "wzpnApp": {
+        "wynik" : {
+            "home": {
+                "title": "Wyniks",
+                "createLabel": "Create a new Wynik",
+                "createOrEditLabel": "Create or edit a Wynik"
+            },
+            "delete": {
+                "question": "Are you sure you want to delete Wynik {{ id }}?"
+            },
+            "detail": {
+                "title": "Wynik"
+            },
+            "wynik": "Wynik",
+            "bramkiPierwszej": "BramkiPierwszej",
+            "bramkiDrugiej": "BramkiDrugiej",
+            "zoltePierwszej": "ZoltePierwszej",
+            "zolteDrugiej": "ZolteDrugiej",
+            "czerwonePierwszej": "CzerwonePierwszej",
+            "czerwoneDrugiej": "CzerwoneDrugiej",
+            "uwagi": "Uwagi",
+            "grafik": "grafik"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "druzyna",
+            "relationshipNameCapitalized": "Druzyna",
+            "relationshipFieldName": "druzyna",
+            "otherEntityName": "druzyna",
+            "relationshipType": "one-to-many",
+            "otherEntityNameCapitalized": "Druzyna"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nazwa",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Nazwa",
+            "fieldNameUnderscored": "nazwa",
+            "fieldInJavaBeanMethod": "Nazwa",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "opis",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Opis",
+            "fieldNameUnderscored": "opis",
+            "fieldInJavaBeanMethod": "Opis",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": true,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150505215012",
+    "pagination": "no",
+    "validation": false
+}

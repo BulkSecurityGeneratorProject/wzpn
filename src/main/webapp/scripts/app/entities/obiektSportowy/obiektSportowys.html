@@ -1,0 +1,202 @@
+<div>
+
+    <h2 translate="wzpnApp.obiektSportowy.home.title">ObiektSportowy</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveObiektSportowyModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="wzpnApp.obiektSportowy.home.createLabel">Create a new ObiektSportowy</span>
+    </button>
+    <div class="modal fade" id="saveObiektSportowyModal" tabindex="-1" role="dialog" aria-labelledby="myObiektSportowyLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="editForm" role="form" novalidate ng-submit="create()">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myObiektSportowyLabel" translate="wzpnApp.obiektSportowy.home.createOrEditLabel">Create or edit a ObiektSportowy</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="obiektSportowy.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="wzpnApp.obiektSportowy.nazwa">Nazwa</label>
+                            <input type="text" class="form-control" name="nazwa"
+                                   ng-model="obiektSportowy.nazwa">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.obiektSportowy.aktywny">Aktywny</label>
+                            <input type="checkbox" class="form-control" name="aktywny"
+                                   ng-model="obiektSportowy.aktywny">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.obiektSportowy.miasto">Miasto</label>
+                            <input type="text" class="form-control" name="miasto"
+                                   ng-model="obiektSportowy.miasto">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.obiektSportowy.kodPocztowy">KodPocztowy</label>
+                            <input type="text" class="form-control" name="kodPocztowy"
+                                   ng-model="obiektSportowy.kodPocztowy">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.obiektSportowy.ulica">Ulica</label>
+                            <input type="text" class="form-control" name="ulica"
+                                   ng-model="obiektSportowy.ulica">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.obiektSportowy.telefon">Telefon</label>
+                            <input type="text" class="form-control" name="telefon"
+                                   ng-model="obiektSportowy.telefon">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.obiektSportowy.prezes">Prezes</label>
+                            <input type="text" class="form-control" name="prezes"
+                                   ng-model="obiektSportowy.prezes">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.obiektSportowy.strona">Strona</label>
+                            <input type="text" class="form-control" name="strona"
+                                   ng-model="obiektSportowy.strona">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.obiektSportowy.miejscaSiedzace">MiejscaSiedzace</label>
+                            <input type="number" class="form-control" name="miejscaSiedzace"
+                                   ng-model="obiektSportowy.miejscaSiedzace">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.obiektSportowy.miejscaStojace">MiejscaStojace</label>
+                            <input type="number" class="form-control" name="miejscaStojace"
+                                   ng-model="obiektSportowy.miejscaStojace">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.obiektSportowy.kryty">Kryty</label>
+                            <input type="checkbox" class="form-control" name="kryty"
+                                   ng-model="obiektSportowy.kryty">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.obiektSportowy.oswietlenie">Oswietlenie</label>
+                            <input type="checkbox" class="form-control" name="oswietlenie"
+                                   ng-model="obiektSportowy.oswietlenie">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.obiektSportowy.wymiary">Wymiary</label>
+                            <input type="text" class="form-control" name="wymiary"
+                                   ng-model="obiektSportowy.wymiary">
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteObiektSportowyConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(obiektSportowy.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="wzpnApp.obiektSportowy.delete.question" translate-values="{id: '{{obiektSportowy.id}}'}">Are you sure you want to delete this ObiektSportowy?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="wzpnApp.obiektSportowy.nazwa">Nazwa</th>
+                    <th translate="wzpnApp.obiektSportowy.aktywny">Aktywny</th>
+                    <th translate="wzpnApp.obiektSportowy.miasto">Miasto</th>
+                    <th translate="wzpnApp.obiektSportowy.kodPocztowy">KodPocztowy</th>
+                    <th translate="wzpnApp.obiektSportowy.ulica">Ulica</th>
+                    <th translate="wzpnApp.obiektSportowy.telefon">Telefon</th>
+                    <th translate="wzpnApp.obiektSportowy.prezes">Prezes</th>
+                    <th translate="wzpnApp.obiektSportowy.strona">Strona</th>
+                    <th translate="wzpnApp.obiektSportowy.miejscaSiedzace">MiejscaSiedzace</th>
+                    <th translate="wzpnApp.obiektSportowy.miejscaStojace">MiejscaStojace</th>
+                    <th translate="wzpnApp.obiektSportowy.kryty">Kryty</th>
+                    <th translate="wzpnApp.obiektSportowy.oswietlenie">Oswietlenie</th>
+                    <th translate="wzpnApp.obiektSportowy.wymiary">Wymiary</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="obiektSportowy in obiektSportowys">
+                    <td><a ui-sref="obiektSportowyDetail({id:obiektSportowy.id})">{{obiektSportowy.id}}</a></td>
+                    <td>{{obiektSportowy.nazwa}}</td>
+                    <td>{{obiektSportowy.aktywny}}</td>
+                    <td>{{obiektSportowy.miasto}}</td>
+                    <td>{{obiektSportowy.kodPocztowy}}</td>
+                    <td>{{obiektSportowy.ulica}}</td>
+                    <td>{{obiektSportowy.telefon}}</td>
+                    <td>{{obiektSportowy.prezes}}</td>
+                    <td>{{obiektSportowy.strona}}</td>
+                    <td>{{obiektSportowy.miejscaSiedzace}}</td>
+                    <td>{{obiektSportowy.miejscaStojace}}</td>
+                    <td>{{obiektSportowy.kryty}}</td>
+                    <td>{{obiektSportowy.oswietlenie}}</td>
+                    <td>{{obiektSportowy.wymiary}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="obiektSportowyDetail({id:obiektSportowy.id})"
+                                class="btn btn-info">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="update(obiektSportowy.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(obiektSportowy.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

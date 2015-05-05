@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <!--
+        Added the entity ObiektSportowy.
+    -->
+    <changeSet id="20150505220328" author="jhipster">
+        <createTable tableName="OBIEKTSPORTOWY">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="nazwa" type="varchar(255)"/>
+            <column name="aktywny" type="bit"/>
+            <column name="miasto" type="varchar(255)"/>
+            <column name="kod_pocztowy" type="varchar(255)"/>
+            <column name="ulica" type="varchar(255)"/>
+            <column name="telefon" type="varchar(255)"/>
+            <column name="prezes" type="varchar(255)"/>
+            <column name="strona" type="varchar(255)"/>
+            <column name="miejsca_siedzace" type="integer"/>
+            <column name="miejsca_stojace" type="integer"/>
+            <column name="kryty" type="bit"/>
+            <column name="oswietlenie" type="bit"/>
+            <column name="wymiary" type="varchar(255)"/>
+        </createTable>
+        
+    </changeSet>
+</databaseChangeLog>

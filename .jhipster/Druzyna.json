@@ -1,0 +1,143 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "liga",
+            "relationshipNameCapitalized": "Liga",
+            "relationshipFieldName": "liga",
+            "otherEntityName": "liga",
+            "relationshipType": "many-to-one",
+            "otherEntityNameCapitalized": "Liga",
+            "otherEntityField": "nazwa"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "kara",
+            "relationshipNameCapitalized": "Kara",
+            "relationshipFieldName": "kara",
+            "otherEntityName": "kara",
+            "relationshipType": "one-to-many",
+            "otherEntityNameCapitalized": "Kara"
+        },
+        {
+            "relationshipId": 3,
+            "relationshipName": "pierwszaDruzyna",
+            "relationshipNameCapitalized": "PierwszaDruzyna",
+            "relationshipFieldName": "pierwszaDruzyna",
+            "otherEntityName": "grafik",
+            "relationshipType": "one-to-many",
+            "otherEntityNameCapitalized": "Grafik"
+        },
+        {
+            "relationshipId": 4,
+            "relationshipName": "drugaDruzyna",
+            "relationshipNameCapitalized": "DrugaDruzyna",
+            "relationshipFieldName": "drugaDruzyna",
+            "otherEntityName": "grafik",
+            "relationshipType": "one-to-many",
+            "otherEntityNameCapitalized": "Grafik"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "nazwa",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Nazwa",
+            "fieldNameUnderscored": "nazwa",
+            "fieldInJavaBeanMethod": "Nazwa",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "usunieta",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "Usunieta",
+            "fieldNameUnderscored": "usunieta",
+            "fieldInJavaBeanMethod": "Usunieta",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "zawieszona",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "Zawieszona",
+            "fieldNameUnderscored": "zawieszona",
+            "fieldInJavaBeanMethod": "Zawieszona",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "prezes",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Prezes",
+            "fieldNameUnderscored": "prezes",
+            "fieldInJavaBeanMethod": "Prezes",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "adres",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Adres",
+            "fieldNameUnderscored": "adres",
+            "fieldInJavaBeanMethod": "Adres",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "telefon",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Telefon",
+            "fieldNameUnderscored": "telefon",
+            "fieldInJavaBeanMethod": "Telefon",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "email",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Email",
+            "fieldNameUnderscored": "email",
+            "fieldInJavaBeanMethod": "Email",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "strona",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Strona",
+            "fieldNameUnderscored": "strona",
+            "fieldInJavaBeanMethod": "Strona",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 9,
+            "fieldName": "trenerzy",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Trenerzy",
+            "fieldNameUnderscored": "trenerzy",
+            "fieldInJavaBeanMethod": "Trenerzy",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 10,
+            "fieldName": "opis",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Opis",
+            "fieldNameUnderscored": "opis",
+            "fieldInJavaBeanMethod": "Opis",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": true,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": false,
+    "fieldsContainBigDecimal": false,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150505215828",
+    "pagination": "no",
+    "validation": false
+}

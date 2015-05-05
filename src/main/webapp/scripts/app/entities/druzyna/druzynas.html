@@ -1,0 +1,185 @@
+<div>
+
+    <h2 translate="wzpnApp.druzyna.home.title">Druzyna</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveDruzynaModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="wzpnApp.druzyna.home.createLabel">Create a new Druzyna</span>
+    </button>
+    <div class="modal fade" id="saveDruzynaModal" tabindex="-1" role="dialog" aria-labelledby="myDruzynaLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="editForm" role="form" novalidate ng-submit="create()">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myDruzynaLabel" translate="wzpnApp.druzyna.home.createOrEditLabel">Create or edit a Druzyna</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="druzyna.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="wzpnApp.druzyna.nazwa">Nazwa</label>
+                            <input type="text" class="form-control" name="nazwa"
+                                   ng-model="druzyna.nazwa">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.druzyna.usunieta">Usunieta</label>
+                            <input type="checkbox" class="form-control" name="usunieta"
+                                   ng-model="druzyna.usunieta">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.druzyna.zawieszona">Zawieszona</label>
+                            <input type="checkbox" class="form-control" name="zawieszona"
+                                   ng-model="druzyna.zawieszona">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.druzyna.prezes">Prezes</label>
+                            <input type="text" class="form-control" name="prezes"
+                                   ng-model="druzyna.prezes">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.druzyna.adres">Adres</label>
+                            <input type="text" class="form-control" name="adres"
+                                   ng-model="druzyna.adres">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.druzyna.telefon">Telefon</label>
+                            <input type="text" class="form-control" name="telefon"
+                                   ng-model="druzyna.telefon">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.druzyna.email">Email</label>
+                            <input type="text" class="form-control" name="email"
+                                   ng-model="druzyna.email">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.druzyna.strona">Strona</label>
+                            <input type="text" class="form-control" name="strona"
+                                   ng-model="druzyna.strona">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.druzyna.trenerzy">Trenerzy</label>
+                            <input type="text" class="form-control" name="trenerzy"
+                                   ng-model="druzyna.trenerzy">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.druzyna.opis">Opis</label>
+                            <input type="text" class="form-control" name="opis"
+                                   ng-model="druzyna.opis">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="wzpnApp.druzyna.liga">liga</label>
+                            <select class="form-control" name="liga" ng-model="druzyna.liga.id" ng-options="liga.id as liga.nazwa for liga in ligas">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteDruzynaConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(druzyna.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="wzpnApp.druzyna.delete.question" translate-values="{id: '{{druzyna.id}}'}">Are you sure you want to delete this Druzyna?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="wzpnApp.druzyna.nazwa">Nazwa</th>
+                    <th translate="wzpnApp.druzyna.usunieta">Usunieta</th>
+                    <th translate="wzpnApp.druzyna.zawieszona">Zawieszona</th>
+                    <th translate="wzpnApp.druzyna.prezes">Prezes</th>
+                    <th translate="wzpnApp.druzyna.adres">Adres</th>
+                    <th translate="wzpnApp.druzyna.telefon">Telefon</th>
+                    <th translate="wzpnApp.druzyna.email">Email</th>
+                    <th translate="wzpnApp.druzyna.strona">Strona</th>
+                    <th translate="wzpnApp.druzyna.trenerzy">Trenerzy</th>
+                    <th translate="wzpnApp.druzyna.opis">Opis</th>
+                    <th translate="wzpnApp.druzyna.liga">liga</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="druzyna in druzynas">
+                    <td><a ui-sref="druzynaDetail({id:druzyna.id})">{{druzyna.id}}</a></td>
+                    <td>{{druzyna.nazwa}}</td>
+                    <td>{{druzyna.usunieta}}</td>
+                    <td>{{druzyna.zawieszona}}</td>
+                    <td>{{druzyna.prezes}}</td>
+                    <td>{{druzyna.adres}}</td>
+                    <td>{{druzyna.telefon}}</td>
+                    <td>{{druzyna.email}}</td>
+                    <td>{{druzyna.strona}}</td>
+                    <td>{{druzyna.trenerzy}}</td>
+                    <td>{{druzyna.opis}}</td>
+                    <td>{{druzyna.liga.nazwa}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="druzynaDetail({id:druzyna.id})"
+                                class="btn btn-info">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="update(druzyna.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(druzyna.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

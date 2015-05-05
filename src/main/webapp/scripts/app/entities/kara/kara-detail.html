@@ -1,0 +1,54 @@
+
+<div>
+    <h2><span translate="wzpnApp.kara.detail.title">Kara</span> {{kara.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th translate="entity.detail.field">Field</th>
+                    <th translate="entity.detail.value">Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.kara.dataOtrzymania">DataOtrzymania</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{kara.dataOtrzymania}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.kara.powod">Powod</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{kara.powod}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.kara.kwota">Kwota</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{kara.kwota}}" readonly>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.kara.druzyna">druzyna</span>
+                    </td>
+                    <td>
+                        <input type="text" class="input-sm form-control" value="{{kara.druzyna.nazwa}}" readonly>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            ui-sref="kara"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>
