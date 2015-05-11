@@ -1,0 +1,6 @@
+id;login;password;first_name;last_name;email;activated;lang_key;created_by
+5;sedzia;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;sedzia;sedzia;Sedzia@localhost;true;pl;system
+6;gry;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;gry;gry;Gry@localhost;true;pl;system
+7;administrator;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;administrator;administrator;Administrator@localhost;true;pl;system
+8;ksiegowy;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;ksiegowy;ksiegowy;Ksiegowy@localhost;true;pl;system
+9;sekretarz;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;sekretarz;sekretarz;Sekretarz@localhost;true;pl;system

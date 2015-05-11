@@ -16,5 +16,6 @@
     <include file="classpath:config/liquibase/changelog/20150505230945_added_entity_PozycjaFaktury.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20150505231555_added_entity_Usluga.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20150505232407_added_entity_PolecenieZaplaty.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20150511123100_added_target_roles.xml" relativeToChangelogFile="false"/> 
     <!-- JHipster will add liquibase changelogs here -->
 </databaseChangeLog>
