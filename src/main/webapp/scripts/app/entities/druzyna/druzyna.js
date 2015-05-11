@@ -7,7 +7,7 @@ angular.module('wzpnApp')
                 parent: 'entity',
                 url: '/druzyna',
                 data: {
-                    roles: ['ROLE_USER'],
+                    roles: [],
                     pageTitle: 'wzpnApp.druzyna.home.title'
                 },
                 views: {
@@ -27,7 +27,7 @@ angular.module('wzpnApp')
                 parent: 'entity',
                 url: '/druzyna/:id',
                 data: {
-                    roles: ['ROLE_USER'],
+                    roles: [],
                     pageTitle: 'wzpnApp.druzyna.detail.title'
                 },
                 views: {

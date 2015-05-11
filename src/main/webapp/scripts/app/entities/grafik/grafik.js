@@ -7,7 +7,7 @@ angular.module('wzpnApp')
                 parent: 'entity',
                 url: '/grafik',
                 data: {
-                    roles: ['ROLE_USER'],
+                    roles: [],
                     pageTitle: 'wzpnApp.grafik.home.title'
                 },
                 views: {
@@ -27,7 +27,7 @@ angular.module('wzpnApp')
                 parent: 'entity',
                 url: '/grafik/:id',
                 data: {
-                    roles: ['ROLE_USER'],
+                    roles: [],
                     pageTitle: 'wzpnApp.grafik.detail.title'
                 },
                 views: {

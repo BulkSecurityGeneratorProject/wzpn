@@ -25,7 +25,7 @@ angular.module('wzpnApp')
                         }
                     },
                     roles = attrs.hasAnyRole.replace(/\s+/g, '').split(',');
-
+                    console.debug(roles);
                 if (roles.length > 0) {
                     defineVisibility(true);
                 }
