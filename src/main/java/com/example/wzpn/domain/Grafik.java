@@ -46,7 +46,9 @@ public class Grafik implements Serializable {
     @ManyToOne
     private ObiektSportowy obiektSportowy;
 
-    @OneToOne(mappedBy = "grafik")
+    @OneToOne(mappedBy = "grafik", fetch = FetchType.LAZY)
+    @JoinColumn
+    @JsonIgnore
     private Wynik wynik;
 
     public Long getId() {
