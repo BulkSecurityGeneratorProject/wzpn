@@ -58,6 +58,23 @@
                         <input type="text" class="input-sm form-control" value="{{faktura.nabywca.nazwa}}" readonly>
                     </td>
                 </tr>
+                
+                
+                
+                  <tr>
+                    <td>
+                        <span translate="wzpnApp.faktura.pozycjaFaktury">Pozycje faktury</span>
+                    </td>
+                    
+                    
+                    
+                    <td>
+                    <div ng-repeat="pozycja in pozycjeFaktury"> {{pozycja.nazwa}} </div>
+                    </td>
+                </tr>
+                
+                
+                
             </tbody>
         </table>
     </div>
