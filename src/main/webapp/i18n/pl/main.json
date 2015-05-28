@@ -1,6 +1,6 @@
 {
     "main": {
-        "title": "Witamy, Java Hipsterze!",
+        "title": "Witamy na stronie WZPN-u!",
         "subtitle": "To jest twoja strona domowa",
         "logged": {
             "message": "Jesteś zalogowany jako użytkownik \"{{username}}\"."
