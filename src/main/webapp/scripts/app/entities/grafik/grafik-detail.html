@@ -67,4 +67,94 @@
             class="btn btn-info">
         <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
     </button>
+        <button ui-sref-active="active" has-role="SEDZIA" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveWynikModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="wzpnApp.wynik.home.createLabel">Create a new Wynik</span>
+    </button>
+    <div class="modal fade" id="saveWynikModal" tabindex="-1" role="dialog" aria-labelledby="myWynikLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="editForm" role="form" novalidate ng-submit="create()">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myWynikLabel" translate="wzpnApp.wynik.home.createOrEditLabel">Create or edit a Wynik</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="wynik.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="wzpnApp.wynik.wynik">Wynik</label>
+                            <input type="text" class="form-control" name="wynik"
+                                   ng-model="wynik.wynik">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.wynik.bramkiPierwszej">BramkiPierwszej</label>
+                            <input type="text" class="form-control" name="bramkiPierwszej"
+                                   ng-model="wynik.bramkiPierwszej">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.wynik.bramkiDrugiej">BramkiDrugiej</label>
+                            <input type="text" class="form-control" name="bramkiDrugiej"
+                                   ng-model="wynik.bramkiDrugiej">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.wynik.zoltePierwszej">ZoltePierwszej</label>
+                            <input type="text" class="form-control" name="zoltePierwszej"
+                                   ng-model="wynik.zoltePierwszej">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.wynik.zolteDrugiej">ZolteDrugiej</label>
+                            <input type="text" class="form-control" name="zolteDrugiej"
+                                   ng-model="wynik.zolteDrugiej">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.wynik.czerwonePierwszej">CzerwonePierwszej</label>
+                            <input type="text" class="form-control" name="czerwonePierwszej"
+                                   ng-model="wynik.czerwonePierwszej">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.wynik.czerwoneDrugiej">CzerwoneDrugiej</label>
+                            <input type="text" class="form-control" name="czerwoneDrugiej"
+                                   ng-model="wynik.czerwoneDrugiej">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.wynik.uwagi">Uwagi</label>
+                            <input type="text" class="form-control" name="uwagi"
+                                   ng-model="wynik.uwagi" >
+
+                        </div>
+<!--                         <div class="form-group">    -->
+<!--                         <label translate="wzpnApp.wynik.grafik">Grafik</label>                        -->
+                          <!--  <input type="text" class="input-sm form-control" name="grafik" value="{{grafik.id}}" readonly>
+							-->
+<!-- 							<input type="text" class="form-control" name="grafik" -->
+<!--                                    ng-model="wynik.grafik.id" > -->
+<!--                         </div> -->
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>

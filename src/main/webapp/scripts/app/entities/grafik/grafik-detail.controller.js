@@ -9,4 +9,21 @@ angular.module('wzpnApp')
             });
         };
         $scope.load($stateParams.id);
+        $scope.create = function () {
+        	$scope.wynik.grafik = $scope.grafik;
+            Wynik.update($scope.wynik,
+                function () {
+                    $scope.loadAll();
+                    $('#saveWynikModal').modal('hide');
+                    $scope.clear();
+                });
+        };
+
+        $scope.update = function (id) {
+            Wynik.get({id: id}, function(result) {
+                $scope.wynik = result;
+                $('#saveWynikModal').modal('show');
+                console.log($scope);
+            });
+        };
     });

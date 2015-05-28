@@ -43,7 +43,7 @@ public class Wynik implements Serializable {
     @Column(name = "uwagi")
     private String uwagi;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY)
     private Grafik grafik;
 
     public Long getId() {
