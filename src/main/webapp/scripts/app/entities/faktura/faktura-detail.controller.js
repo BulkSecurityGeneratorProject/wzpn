@@ -12,7 +12,7 @@ angular.module('wzpnApp')
          PozycjaFaktury.query(function(result) {
             	var resultNew = [];
             	angular.forEach(result, function(value, key) {
-            		if(value.faktura.id == id) resultNew.push(value);
+            		if(value.faktura != null && value.faktura.id == id) resultNew.push(value);
             	});
             	
             	 $scope.pozycjeFaktury = resultNew;
