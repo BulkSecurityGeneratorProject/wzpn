@@ -1,87 +1,96 @@
 
 <div>
-    <h2><span translate="wzpnApp.faktura.detail.title">Faktura</span> {{faktura.id}}</h2>
-    <div class="table-responsive">
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th translate="entity.detail.field">Field</th>
-                    <th translate="entity.detail.value">Value</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        <span translate="wzpnApp.faktura.nazwa">Nazwa</span>
-                    </td>
-                    <td>
-                        <input type="text" class="input-sm form-control" value="{{faktura.nazwa}}" readonly>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span translate="wzpnApp.faktura.dataWystawienia">DataWystawienia</span>
-                    </td>
-                    <td>
-                        <input type="text" class="input-sm form-control" value="{{faktura.dataWystawienia}}" readonly>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span translate="wzpnApp.faktura.dataSprzedazy">DataSprzedazy</span>
-                    </td>
-                    <td>
-                        <input type="text" class="input-sm form-control" value="{{faktura.dataSprzedazy}}" readonly>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span translate="wzpnApp.faktura.miejscowosc">Miejscowosc</span>
-                    </td>
-                    <td>
-                        <input type="text" class="input-sm form-control" value="{{faktura.miejscowosc}}" readonly>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span translate="wzpnApp.faktura.sprzedawca">sprzedawca</span>
-                    </td>
-                    <td>
-                        <input type="text" class="input-sm form-control" value="{{faktura.sprzedawca.nazwa}}" readonly>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span translate="wzpnApp.faktura.nabywca">nabywca</span>
-                    </td>
-                    <td>
-                        <input type="text" class="input-sm form-control" value="{{faktura.nabywca.nazwa}}" readonly>
-                    </td>
-                </tr>
-                
-                
-                
-                  <tr>
-                    <td>
-                        <span translate="wzpnApp.faktura.pozycjaFaktury">Pozycje faktury</span>
-                    </td>
-                    
-                    
-                    
-                    <td>
-                    <div ng-repeat="pozycja in pozycjeFaktury"> {{pozycja.nazwa}} </div>
-                    </td>
-                </tr>
-                
-                
-                
-            </tbody>
-        </table>
-    </div>
+	<div class="document">
 
-    <button type="submit"
-            ui-sref="faktura"
-            class="btn btn-info">
-        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
-    </button>
+
+		<div class="div-to-right">
+			Miejscowosc: {{faktura.miejscowosc}} <br> Data sprzedazy:
+			{{faktura.dataSprzedazy}} <br> Data wystawienia:
+			{{faktura.dataWystawienia}}
+		</div>
+		<br> <br> <br> <br>
+		<h2 class="text-center">
+			<span translate="wzpnApp.faktura.detail.title">Faktura</span>
+			{{faktura.id}}
+		</h2>
+		<br> <br>
+
+		<div class="div-to-left">
+			<strong>Sprzedawca:</strong> <br> {{faktura.nabywca.nazwa}} <br>
+			ul. {{faktura.nabywca.adres}}, {{faktura.nabywca.kodPocztowy}}
+			{{faktura.nabywca.miejscowosc}}<br> NIP: {{faktura.nabywca.nip}}<br>
+			tel. {{faktura.nabywca.telefon}}<br> email:
+			{{faktura.nabywca.email}}<br>
+		</div>
+
+		<div class="div-to-right">
+			<strong>Nabywca:</strong> <br> {{faktura.nabywca.nazwa}} <br>
+			ul. {{faktura.nabywca.adres}}, {{faktura.nabywca.kodPocztowy}}
+			{{faktura.nabywca.miejscowosc}}<br> NIP: {{faktura.nabywca.nip}}<br>
+			tel. {{faktura.nabywca.telefon}}<br> email:
+			{{faktura.nabywca.email}}<br>
+		</div>
+
+
+		<div style="margin-top: 200px;">
+			<table class="table table-striped">
+				<thead>
+					<tr>
+						<th>LP</th>
+						<th>Nazwa towaru</th>
+						<th>Ilosc</th>
+						<th>Brutto (PLN)</th>
+						<th>Podatek (PLN)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="pozycja in pozycjeFaktury">
+						<td>{{ $index + 1 }}</td>
+						<td>{{pozycja.nazwa}}</td>
+						<td>{{pozycja.ilosc}}</td>
+						<td>{{pozycja.brutto}}</td>
+						<td>{{pozycja.podatek}}</td>
+					</tr>
+				</tbody>
+				<thead>
+				<tr>
+						<th></th>
+						<th></th>
+						<th>RAZEM</th>
+						<th>{{lacznaKwota}}</th>
+						<th>{{lacznyPodatek}}</th>
+					</tr>
+				</thead>
+			</table>
+
+		</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="div-to-left">
+Czytelny podpis osoby upowaznionej do odbioru faktury: <br> <br>
+.....................................................................
+</div>
+<div class="div-to-right">
+Czytelny podpis osoby upowaznionej do wystawienia faktury: <br> <br>
+.....................................................................
+</div>
+
+
+
+
+
+
+	</div>
+
+
+<br>
+	<button type="submit" ui-sref="faktura" class="btn btn-info">
+		<span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span
+			translate="entity.action.back"> Back</span>
+	</button>
 </div>
