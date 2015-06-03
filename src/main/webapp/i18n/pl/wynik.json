@@ -2,25 +2,25 @@
     "wzpnApp": {
         "wynik" : {
             "home": {
-                "title": "Wynik",
+                "title": "Wyniki",
                 "createLabel": "Dodaj Wynik",
-                "createOrEditLabel": "Dodaj lub edytuj: Wynik"
+                "createOrEditLabel": "Dodaj lub edytuj wynik"
             },
             "delete": {
-                "question": "Czy na pewno chcesz usunąć Wynik {{ id }}?"
+                "question": "Czy na pewno chcesz usunąć wynik {{ id }}?"
             },
             "detail": {
                 "title": "Wynik"
             },
             "wynik": "Wynik",
-            "bramkiPierwszej": "BramkiPierwszej",
-            "bramkiDrugiej": "BramkiDrugiej",
-            "zoltePierwszej": "ZoltePierwszej",
-            "zolteDrugiej": "ZolteDrugiej",
-            "czerwonePierwszej": "CzerwonePierwszej",
-            "czerwoneDrugiej": "CzerwoneDrugiej",
+            "bramkiPierwszej": "Bramki pierwszej drużyny",
+            "bramkiDrugiej": "Bramki drugiej drużyny",
+            "zoltePierwszej": "Żółte kartki pierwszej drużyny",
+            "zolteDrugiej": "Żółte kartki drugiej drużyny",
+            "czerwonePierwszej": "Czerwone kartki pierwszej drużyny",
+            "czerwoneDrugiej": "Czerwone kartki drugiej drużyny",
             "uwagi": "Uwagi",
-            "grafik": "grafik"
+            "grafik": "Grafik"
         }
     }
 }

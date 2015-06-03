@@ -1,45 +1,46 @@
-
-<div>
-    <h2><span translate="wzpnApp.polecenieZaplaty.detail.title">PolecenieZaplaty</span> {{polecenieZaplaty.id}}</h2>
-    <div class="table-responsive">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   
+   <div>
+   		<div class="document">
+   		<h2 class="text-center"><span translate="wzpnApp.polecenieZaplaty.detail.title">Polecenie zaplaty</span> {{polecenieZaplaty.id}}</h2>
+<!--    		Odbiorca: {{polecenieZaplaty.nazwaOdbiorcy}}<br>
+   		Zleceniodawca: {{polecenieZaplaty.nazwaZleceniodawcy}} <br>
+   		Rachunek: 
+ -->   		
+ 
+   <div class="table-responsive">
         <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th translate="entity.detail.field">Field</th>
-                    <th translate="entity.detail.value">Value</th>
-                </tr>
-            </thead>
             <tbody>
                 <tr>
                     <td>
-                        <span translate="wzpnApp.polecenieZaplaty.nazwaOdbiorcy">NazwaOdbiorcy</span>
+                        <span>Odbiorca:</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{polecenieZaplaty.nazwaOdbiorcy}}" readonly>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <span translate="wzpnApp.polecenieZaplaty.nazwaZleceniodawcy">NazwaZleceniodawcy</span>
-                    </td>
-                    <td>
-                        <input type="text" class="input-sm form-control" value="{{polecenieZaplaty.nazwaZleceniodawcy}}" readonly>
+                        {{polecenieZaplaty.nazwaOdbiorcy}}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <span translate="wzpnApp.polecenieZaplaty.rachunek">Rachunek</span>
+                        <span>Zleceniodawca:</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{polecenieZaplaty.rachunek}}" readonly>
+                        {{polecenieZaplaty.nazwaZleceniodawcy}}
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <span translate="wzpnApp.polecenieZaplaty.tytul">Tytul</span>
+                        <span>Rachunek:</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{polecenieZaplaty.tytul}}" readonly>
+                        {{polecenieZaplaty.rachunek}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span>Tytuł:</span>
+                    </td>
+                    <td>
+                        {{polecenieZaplaty.tytul}}
                     </td>
                 </tr>
                 <tr>
@@ -47,12 +48,30 @@
                         <span translate="wzpnApp.polecenieZaplaty.kwota">Kwota</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{polecenieZaplaty.kwota}}" readonly>
+                        {{polecenieZaplaty.kwota}} zł
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <br>
+    <br>
+ <div class="div-to-left">
+Czytelny podpis odbiorcy: <br> <br>
+.....................................................................
+</div>
+<div class="div-to-right">
+Czytelny podpis zleceniodawcy: <br> <br>
+.....................................................................
+</div>
+ 
+ </div>
+   
+   
+      <br>
+
+   
+  
 
     <button type="submit"
             ui-sref="polecenieZaplaty"

@@ -2,18 +2,18 @@
     "wzpnApp": {
         "druzyna" : {
             "home": {
-                "title": "Druzyna",
-                "createLabel": "Dodaj Druzyna",
-                "createOrEditLabel": "Dodaj lub edytuj: Druzyna"
+                "title": "Drużyny",
+                "createLabel": "Dodaj drużynę",
+                "createOrEditLabel": "Dodaj lub edytuj drużynę"
             },
             "delete": {
-                "question": "Czy na pewno chcesz usunąć Druzyna {{ id }}?"
+                "question": "Czy na pewno chcesz usunąć drużynę {{ nazwa }}?"
             },
             "detail": {
-                "title": "Druzyna"
+                "title": "Drużyna"
             },
             "nazwa": "Nazwa",
-            "usunieta": "Usunieta",
+            "usunieta": "Usunięta",
             "zawieszona": "Zawieszona",
             "prezes": "Prezes",
             "adres": "Adres",
@@ -22,10 +22,10 @@
             "strona": "Strona",
             "trenerzy": "Trenerzy",
             "opis": "Opis",
-            "liga": "liga",
-            "kara": "kara",
-            "pierwszaDruzyna": "pierwszaDruzyna",
-            "drugaDruzyna": "drugaDruzyna"
+            "liga": "Liga",
+            "kara": "Kara",
+            "pierwszaDruzyna": "Pierwsza drużyna",
+            "drugaDruzyna": "Druga drużyna"
         }
     }
 }

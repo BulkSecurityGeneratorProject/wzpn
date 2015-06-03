@@ -147,18 +147,12 @@
                 <tr>
                     <th>ID</th>
                     <th translate="wzpnApp.obiektSportowy.nazwa">Nazwa</th>
-                    <th translate="wzpnApp.obiektSportowy.aktywny">Aktywny</th>
                     <th translate="wzpnApp.obiektSportowy.miasto">Miasto</th>
                     <th translate="wzpnApp.obiektSportowy.kodPocztowy">KodPocztowy</th>
                     <th translate="wzpnApp.obiektSportowy.ulica">Ulica</th>
                     <th translate="wzpnApp.obiektSportowy.telefon">Telefon</th>
-                    <th translate="wzpnApp.obiektSportowy.prezes">Prezes</th>
-                    <th translate="wzpnApp.obiektSportowy.strona">Strona</th>
                     <th translate="wzpnApp.obiektSportowy.miejscaSiedzace">MiejscaSiedzace</th>
                     <th translate="wzpnApp.obiektSportowy.miejscaStojace">MiejscaStojace</th>
-                    <th translate="wzpnApp.obiektSportowy.kryty">Kryty</th>
-                    <th translate="wzpnApp.obiektSportowy.oswietlenie">Oswietlenie</th>
-                    <th translate="wzpnApp.obiektSportowy.wymiary">Wymiary</th>
                     <th></th>
                 </tr>
             </thead>
@@ -166,18 +160,12 @@
                 <tr ng-repeat="obiektSportowy in obiektSportowys">
                     <td><a ui-sref="obiektSportowyDetail({id:obiektSportowy.id})">{{obiektSportowy.id}}</a></td>
                     <td>{{obiektSportowy.nazwa}}</td>
-                    <td>{{obiektSportowy.aktywny}}</td>
                     <td>{{obiektSportowy.miasto}}</td>
                     <td>{{obiektSportowy.kodPocztowy}}</td>
                     <td>{{obiektSportowy.ulica}}</td>
                     <td>{{obiektSportowy.telefon}}</td>
-                    <td>{{obiektSportowy.prezes}}</td>
-                    <td>{{obiektSportowy.strona}}</td>
                     <td>{{obiektSportowy.miejscaSiedzace}}</td>
                     <td>{{obiektSportowy.miejscaStojace}}</td>
-                    <td>{{obiektSportowy.kryty}}</td>
-                    <td>{{obiektSportowy.oswietlenie}}</td>
-                    <td>{{obiektSportowy.wymiary}}</td>
                     <td>
                         <button type="submit"
                                 ui-sref="obiektSportowyDetail({id:obiektSportowy.id})"

@@ -2,20 +2,20 @@
     "wzpnApp": {
         "kara" : {
             "home": {
-                "title": "Kara",
-                "createLabel": "Dodaj Kara",
-                "createOrEditLabel": "Dodaj lub edytuj: Kara"
+                "title": "Kary",
+                "createLabel": "Dodaj karę",
+                "createOrEditLabel": "Dodaj lub edytuj karę"
             },
             "delete": {
-                "question": "Czy na pewno chcesz usunąć Kara {{ id }}?"
+                "question": "Czy na pewno chcesz usunąć karę {{ id }}?"
             },
             "detail": {
                 "title": "Kara"
             },
-            "dataOtrzymania": "DataOtrzymania",
-            "powod": "Powod",
+            "dataOtrzymania": "Data otrzymania",
+            "powod": "Powód",
             "kwota": "Kwota",
-            "druzyna": "druzyna"
+            "druzyna": "drużyna"
         }
     }
 }

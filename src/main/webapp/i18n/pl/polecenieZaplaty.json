@@ -2,20 +2,20 @@
     "wzpnApp": {
         "polecenieZaplaty" : {
             "home": {
-                "title": "PolecenieZaplaty",
-                "createLabel": "Dodaj PolecenieZaplaty",
-                "createOrEditLabel": "Dodaj lub edytuj: PolecenieZaplaty"
+                "title": "Polecenia zapłaty",
+                "createLabel": "Dodaj polecenie zapłaty",
+                "createOrEditLabel": "Dodaj lub edytuj polecenie zapłaty"
             },
             "delete": {
                 "question": "Czy na pewno chcesz usunąć PolecenieZaplaty {{ id }}?"
             },
             "detail": {
-                "title": "PolecenieZaplaty"
+                "title": "Polecenie zapłaty"
             },
-            "nazwaOdbiorcy": "NazwaOdbiorcy",
-            "nazwaZleceniodawcy": "NazwaZleceniodawcy",
+            "nazwaOdbiorcy": "Odbiorca",
+            "nazwaZleceniodawcy": "Zleceniodawca",
             "rachunek": "Rachunek",
-            "tytul": "Tytul",
+            "tytul": "Tytuł",
             "kwota": "Kwota"
         }
     }

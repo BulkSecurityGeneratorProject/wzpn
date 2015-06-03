@@ -3,22 +3,22 @@
         "grafik" : {
             "home": {
                 "title": "Grafik",
-                "createLabel": "Dodaj Grafik",
-                "createOrEditLabel": "Dodaj lub edytuj: Grafik"
+                "createLabel": "Dodaj mecz",
+                "createOrEditLabel": "Dodaj lub edytuj mecz"
             },
             "delete": {
-                "question": "Czy na pewno chcesz usunąć Grafik {{ id }}?"
+                "question": "Czy na pewno chcesz usunąć mecz {{ id }}?"
             },
             "detail": {
-                "title": "Grafik"
+                "title": "Mecz"
             },
             "nazwa": "Nazwa",
             "opis": "Opis",
             "rozpoczecie": "Rozpoczecie",
-            "pierwszaDruzyna": "pierwszaDruzyna",
-            "drugaDruzyna": "drugaDruzyna",
-            "obiektSportowy": "obiektSportowy",
-            "wynik": "wynik"
+            "pierwszaDruzyna": "Pierwsza drużyna",
+            "drugaDruzyna": "Druga drużyna",
+            "obiektSportowy": "Obiekt sportowy",
+            "wynik": "Wynik"
         }
     }
 }

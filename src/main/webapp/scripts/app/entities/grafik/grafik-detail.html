@@ -1,29 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <div>
-    <h2><span translate="wzpnApp.grafik.detail.title">Grafik</span> {{grafik.id}}</h2>
+<div class="document">
+    <h2 class="text-center">{{grafik.nazwa}}</h2>
+    <br>
     <div class="table-responsive">
         <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th translate="entity.detail.field">Field</th>
-                    <th translate="entity.detail.value">Value</th>
-                </tr>
-            </thead>
             <tbody>
-                <tr>
-                    <td>
-                        <span translate="wzpnApp.grafik.nazwa">Nazwa</span>
-                    </td>
-                    <td>
-                        <input type="text" class="input-sm form-control" value="{{grafik.nazwa}}" readonly>
-                    </td>
-                </tr>
+                
                 <tr>
                     <td>
                         <span translate="wzpnApp.grafik.opis">Opis</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{grafik.opis}}" readonly>
+                        {{grafik.opis}}
                     </td>
                 </tr>
                 <tr>
@@ -31,7 +21,7 @@
                         <span translate="wzpnApp.grafik.rozpoczecie">Rozpoczecie</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{grafik.rozpoczecie}}" readonly>
+                        {{grafik.rozpoczecie}}
                     </td>
                 </tr>
                 <tr>
@@ -39,7 +29,7 @@
                         <span translate="wzpnApp.grafik.pierwszaDruzyna">pierwszaDruzyna</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{grafik.pierwszaDruzyna.nazwa}}" readonly>
+                       {{grafik.pierwszaDruzyna.nazwa}}
                     </td>
                 </tr>
                 <tr>
@@ -47,7 +37,7 @@
                         <span translate="wzpnApp.grafik.drugaDruzyna">drugaDruzyna</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{grafik.drugaDruzyna.nazwa}}" readonly>
+                       {{grafik.drugaDruzyna.nazwa}}
                     </td>
                 </tr>
                 <tr>
@@ -55,13 +45,20 @@
                         <span translate="wzpnApp.grafik.obiektSportowy">obiektSportowy</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{grafik.obiektSportowy.nazwa}}" readonly>
+                       {{grafik.obiektSportowy.nazwa}}
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-
+    <br>
+    <div class="div-to-right">
+    Podpis ustalającego mecz:
+    <br> <br>
+    .............................................
+    </div>
+</div>
+<br>
     <button type="submit"
             ui-sref="grafik"
             class="btn btn-info">

@@ -1,37 +1,32 @@
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <div>
-    <h2><span translate="wzpnApp.druzyna.detail.title">Druzyna</span> {{druzyna.id}}</h2>
+<div class="document">
+    <h2 class="text-center">{{druzyna.nazwa}}</h2>
+    <br>
     <div class="table-responsive">
         <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th translate="entity.detail.field">Field</th>
-                    <th translate="entity.detail.value">Value</th>
-                </tr>
-            </thead>
+           
             <tbody>
-                <tr>
-                    <td>
-                        <span translate="wzpnApp.druzyna.nazwa">Nazwa</span>
-                    </td>
-                    <td>
-                        <input type="text" class="input-sm form-control" value="{{druzyna.nazwa}}" readonly>
-                    </td>
-                </tr>
                 <tr>
                     <td>
                         <span translate="wzpnApp.druzyna.usunieta">Usunieta</span>
                     </td>
-                    <td>
-                        <input type="text" class="input-sm form-control" value="{{druzyna.usunieta}}" readonly>
+                      <td ng-if="druzyna.usunieta == null || druzyna.usunieta == false ">
+                    NIE
+                    </td>
+                    <td ng-if="druzyna.usunieta == true">
+                    TAK
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <span translate="wzpnApp.druzyna.zawieszona">Zawieszona</span>
                     </td>
-                    <td>
-                        <input type="text" class="input-sm form-control" value="{{druzyna.zawieszona}}" readonly>
+                      <td ng-if="druzyna.zawieszona == null || druzyna.zawieszona == false ">
+                    NIE
+                    </td>
+                    <td ng-if="druzyna.zawieszona == true">
+                    TAK
                     </td>
                 </tr>
                 <tr>
@@ -39,7 +34,7 @@
                         <span translate="wzpnApp.druzyna.prezes">Prezes</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{druzyna.prezes}}" readonly>
+                        {{druzyna.prezes}}
                     </td>
                 </tr>
                 <tr>
@@ -47,7 +42,7 @@
                         <span translate="wzpnApp.druzyna.adres">Adres</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{druzyna.adres}}" readonly>
+                        {{druzyna.adres}}
                     </td>
                 </tr>
                 <tr>
@@ -55,7 +50,7 @@
                         <span translate="wzpnApp.druzyna.telefon">Telefon</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{druzyna.telefon}}" readonly>
+                        {{druzyna.telefon}}
                     </td>
                 </tr>
                 <tr>
@@ -63,7 +58,7 @@
                         <span translate="wzpnApp.druzyna.email">Email</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{druzyna.email}}" readonly>
+                        {{druzyna.email}}
                     </td>
                 </tr>
                 <tr>
@@ -71,7 +66,7 @@
                         <span translate="wzpnApp.druzyna.strona">Strona</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{druzyna.strona}}" readonly>
+                        {{druzyna.strona}}
                     </td>
                 </tr>
                 <tr>
@@ -79,7 +74,7 @@
                         <span translate="wzpnApp.druzyna.trenerzy">Trenerzy</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{druzyna.trenerzy}}" readonly>
+                        {{druzyna.trenerzy}}
                     </td>
                 </tr>
                 <tr>
@@ -87,7 +82,7 @@
                         <span translate="wzpnApp.druzyna.opis">Opis</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{druzyna.opis}}" readonly>
+                        {{druzyna.opis}}
                     </td>
                 </tr>
                 <tr>
@@ -95,13 +90,14 @@
                         <span translate="wzpnApp.druzyna.liga">liga</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{druzyna.liga.nazwa}}" readonly>
+                       {{druzyna.liga.nazwa}}
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-
+</div>
+<br>
     <button type="submit"
             ui-sref="druzyna"
             class="btn btn-info">

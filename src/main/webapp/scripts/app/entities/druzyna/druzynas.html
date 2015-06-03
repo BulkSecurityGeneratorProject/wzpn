@@ -134,15 +134,10 @@
                 <tr>
                     <th>ID</th>
                     <th translate="wzpnApp.druzyna.nazwa">Nazwa</th>
-                    <th translate="wzpnApp.druzyna.usunieta">Usunieta</th>
-                    <th translate="wzpnApp.druzyna.zawieszona">Zawieszona</th>
-                    <th translate="wzpnApp.druzyna.prezes">Prezes</th>
                     <th translate="wzpnApp.druzyna.adres">Adres</th>
                     <th translate="wzpnApp.druzyna.telefon">Telefon</th>
                     <th translate="wzpnApp.druzyna.email">Email</th>
                     <th translate="wzpnApp.druzyna.strona">Strona</th>
-                    <th translate="wzpnApp.druzyna.trenerzy">Trenerzy</th>
-                    <th translate="wzpnApp.druzyna.opis">Opis</th>
                     <th translate="wzpnApp.druzyna.liga">liga</th>
                     <th></th>
                 </tr>
@@ -151,15 +146,10 @@
                 <tr ng-repeat="druzyna in druzynas">
                     <td><a ui-sref="druzynaDetail({id:druzyna.id})">{{druzyna.id}}</a></td>
                     <td>{{druzyna.nazwa}}</td>
-                    <td>{{druzyna.usunieta}}</td>
-                    <td>{{druzyna.zawieszona}}</td>
-                    <td>{{druzyna.prezes}}</td>
                     <td>{{druzyna.adres}}</td>
                     <td>{{druzyna.telefon}}</td>
                     <td>{{druzyna.email}}</td>
-                    <td>{{druzyna.strona}}</td>
-                    <td>{{druzyna.trenerzy}}</td>
-                    <td>{{druzyna.opis}}</td>
+                    <td><a href="{{druzyna.strona}}">{{druzyna.strona}}</a></td>
                     <td>{{druzyna.liga.nazwa}}</td>
                     <td>
                         <button type="submit"

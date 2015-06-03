@@ -1,29 +1,18 @@
 
 <div>
-    <h2><span translate="wzpnApp.usluga.detail.title">Usluga</span> {{usluga.id}}</h2>
+
+<div  class="document">
+
+    <h2 class="text-center">{{usluga.nazwa}}</h2> <br>
     <div class="table-responsive">
         <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th translate="entity.detail.field">Field</th>
-                    <th translate="entity.detail.value">Value</th>
-                </tr>
-            </thead>
             <tbody>
-                <tr>
-                    <td>
-                        <span translate="wzpnApp.usluga.nazwa">Nazwa</span>
-                    </td>
-                    <td>
-                        <input type="text" class="input-sm form-control" value="{{usluga.nazwa}}" readonly>
-                    </td>
-                </tr>
                 <tr>
                     <td>
                         <span translate="wzpnApp.usluga.cena">Cena</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{usluga.cena}}" readonly>
+                        {{usluga.cena}}
                     </td>
                 </tr>
                 <tr>
@@ -31,24 +20,29 @@
                         <span translate="wzpnApp.usluga.podatek">Podatek</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{usluga.podatek}}" readonly>
+                        {{usluga.podatek}}
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <span translate="wzpnApp.usluga.usunieta">Usunieta</span>
                     </td>
-                    <td>
-                        <input type="text" class="input-sm form-control" value="{{usluga.usunieta}}" readonly>
+                    <td ng-if="usluga.usunieta == null || usluga.usunieta == false">
+                    NIE
+                    </td>
+                    <td ng-if="usluga.usunieta == true">
+                    TAK
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
+    <br>
 
     <button type="submit"
             ui-sref="usluga"
             class="btn btn-info">
         <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
     </button>
+</div>
 </div>

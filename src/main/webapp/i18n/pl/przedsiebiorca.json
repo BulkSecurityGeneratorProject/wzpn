@@ -2,25 +2,25 @@
     "wzpnApp": {
         "przedsiebiorca" : {
             "home": {
-                "title": "Przedsiebiorca",
-                "createLabel": "Dodaj Przedsiebiorca",
-                "createOrEditLabel": "Dodaj lub edytuj: Przedsiebiorca"
+                "title": "Przedsiębiorcy",
+                "createLabel": "Dodaj przedsiębiorcę",
+                "createOrEditLabel": "Dodaj lub edytuj przedsiębiorcę"
             },
             "delete": {
-                "question": "Czy na pewno chcesz usunąć Przedsiebiorca {{ id }}?"
+                "question": "Czy na pewno chcesz usunąć przedsiębiorcę {{ id }}?"
             },
             "detail": {
                 "title": "Przedsiebiorca"
             },
             "nazwa": "Nazwa",
             "adres": "Adres",
-            "miejscowosc": "Miejscowosc",
-            "kodPocztowy": "KodPocztowy",
+            "miejscowosc": "Miejscowość",
+            "kodPocztowy": "Kod pocztowy",
             "nip": "Nip",
             "email": "Email",
             "telefon": "Telefon",
-            "sprzedawca": "sprzedawca",
-            "nabywca": "nabywca"
+            "sprzedawca": "Sprzedawca",
+            "nabywca": "Nabywca"
         }
     }
 }

@@ -2,12 +2,12 @@
     "wzpnApp": {
         "liga" : {
             "home": {
-                "title": "Liga",
-                "createLabel": "Dodaj Liga",
-                "createOrEditLabel": "Dodaj lub edytuj: Liga"
+                "title": "Ligi",
+                "createLabel": "Dodaj ligę",
+                "createOrEditLabel": "Dodaj lub edytuj ligę"
             },
             "delete": {
-                "question": "Czy na pewno chcesz usunąć Liga {{ id }}?"
+                "question": "Czy na pewno chcesz usunąć ligę {{ nazwa }}?"
             },
             "detail": {
                 "title": "Liga"

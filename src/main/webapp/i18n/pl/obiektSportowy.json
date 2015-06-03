@@ -2,30 +2,30 @@
     "wzpnApp": {
         "obiektSportowy" : {
             "home": {
-                "title": "ObiektSportowy",
-                "createLabel": "Dodaj ObiektSportowy",
-                "createOrEditLabel": "Dodaj lub edytuj: ObiektSportowy"
+                "title": "Obiekty sportowe",
+                "createLabel": "Dodaj obiekt sportowy",
+                "createOrEditLabel": "Dodaj lub edytuj obiekt sportowy"
             },
             "delete": {
-                "question": "Czy na pewno chcesz usunąć ObiektSportowy {{ id }}?"
+                "question": "Czy na pewno chcesz usunąć obiekt sportowy {{ id }}?"
             },
             "detail": {
-                "title": "ObiektSportowy"
+                "title": "Obiekt sportowy"
             },
             "nazwa": "Nazwa",
             "aktywny": "Aktywny",
             "miasto": "Miasto",
-            "kodPocztowy": "KodPocztowy",
+            "kodPocztowy": "Kod pocztowy",
             "ulica": "Ulica",
             "telefon": "Telefon",
             "prezes": "Prezes",
             "strona": "Strona",
-            "miejscaSiedzace": "MiejscaSiedzace",
-            "miejscaStojace": "MiejscaStojace",
+            "miejscaSiedzace": "Miejsca siedzące",
+            "miejscaStojace": "Miejsca stojące",
             "kryty": "Kryty",
-            "oswietlenie": "Oswietlenie",
+            "oswietlenie": "Oświetlenie",
             "wymiary": "Wymiary",
-            "grafik": "grafik"
+            "grafik": "Grafik"
         }
     }
 }

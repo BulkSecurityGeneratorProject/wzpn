@@ -1,29 +1,18 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <div>
-    <h2><span translate="wzpnApp.wynik.detail.title">Wynik</span> {{wynik.id}}</h2>
+<div class="document">
+    <h2 class="text-center">{{wynik.wynik}}</h2>
+    <br>
     <div class="table-responsive">
         <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th translate="entity.detail.field">Field</th>
-                    <th translate="entity.detail.value">Value</th>
-                </tr>
-            </thead>
             <tbody>
-                <tr>
-                    <td>
-                        <span translate="wzpnApp.wynik.wynik">Wynik</span>
-                    </td>
-                    <td>
-                        <input type="text" class="input-sm form-control" value="{{wynik.wynik}}" readonly>
-                    </td>
-                </tr>
                 <tr>
                     <td>
                         <span translate="wzpnApp.wynik.bramkiPierwszej">BramkiPierwszej</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{wynik.bramkiPierwszej}}" readonly>
+                        {{wynik.bramkiPierwszej}}
                     </td>
                 </tr>
                 <tr>
@@ -31,7 +20,7 @@
                         <span translate="wzpnApp.wynik.bramkiDrugiej">BramkiDrugiej</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{wynik.bramkiDrugiej}}" readonly>
+                        {{wynik.bramkiDrugiej}}
                     </td>
                 </tr>
                 <tr>
@@ -39,7 +28,7 @@
                         <span translate="wzpnApp.wynik.zoltePierwszej">ZoltePierwszej</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{wynik.zoltePierwszej}}" readonly>
+                        {{wynik.zoltePierwszej}}
                     </td>
                 </tr>
                 <tr>
@@ -47,7 +36,7 @@
                         <span translate="wzpnApp.wynik.zolteDrugiej">ZolteDrugiej</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{wynik.zolteDrugiej}}" readonly>
+                       {{wynik.zolteDrugiej}}
                     </td>
                 </tr>
                 <tr>
@@ -55,7 +44,7 @@
                         <span translate="wzpnApp.wynik.czerwonePierwszej">CzerwonePierwszej</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{wynik.czerwonePierwszej}}" readonly>
+                       {{wynik.czerwonePierwszej}}
                     </td>
                 </tr>
                 <tr>
@@ -63,7 +52,7 @@
                         <span translate="wzpnApp.wynik.czerwoneDrugiej">CzerwoneDrugiej</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{wynik.czerwoneDrugiej}}" readonly>
+                       {{wynik.czerwoneDrugiej}}
                     </td>
                 </tr>
                 <tr>
@@ -71,13 +60,19 @@
                         <span translate="wzpnApp.wynik.uwagi">Uwagi</span>
                     </td>
                     <td>
-                        <input type="text" class="input-sm form-control" value="{{wynik.uwagi}}" readonly>
+                        {{wynik.uwagi}}
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-
+    <br> <br>
+    <div class="div-to-right">
+    Podpis sędziego składającego raport: <br> <br>
+.............................................................
+    </div>
+</div>
+<br>
     <button type="submit"
             ui-sref="wynik"
             class="btn btn-info">
