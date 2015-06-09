@@ -27,7 +27,6 @@ angular.module('wzpnApp')
             Wynik.get({id: id}, function(result) {
                 $scope.wynik = result;
                 $('#saveWynikModal').modal('show');
-                console.log($scope);
             });
         };
     });

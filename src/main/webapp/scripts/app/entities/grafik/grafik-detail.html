@@ -50,7 +50,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <span translate="wzpnApp.grafik.wynik.wynik">wynik</span>
+                        <span>Wynik</span>
                     </td>
                     <td>
                        {{grafik.wynik.wynik}}
@@ -72,9 +72,15 @@
             class="btn btn-info">
         <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
     </button>
-        <button ui-sref-active="active" has-role="SEDZIA" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveWynikModal" ng-click="clear()">
-        <span class="glyphicon glyphicon-flash"></span> <span translate="wzpnApp.wynik.home.createLabel">Create a new Wynik</span>
+        <button ui-sref-active="active" has-role="SEDZIA" class="btn btn-primary" data-toggle="modal" data-target="#saveWynikModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span>Dodaj Wynik</span>
     </button>
+    <button ui-sref-active="active" has-role="SEDZIA"
+                        		type="submit"
+                                ng-click="update(grafik.wynik.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<!-- <span translate="entity.action.edit"> --><span>Edytuj Wynik</span>
+                        </button>
     <div class="modal fade" id="saveWynikModal" tabindex="-1" role="dialog" aria-labelledby="myWynikLabel"
          aria-hidden="true">
         <div class="modal-dialog">
