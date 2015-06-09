@@ -72,10 +72,10 @@
             class="btn btn-info">
         <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
     </button>
-        <button ui-sref-active="active" has-role="SEDZIA" class="btn btn-primary" data-toggle="modal" data-target="#saveWynikModal" ng-click="clear()">
+        <button ui-sref-active="active" has-role="SEDZIA" ng-disabled="isDisableAdd" class="btn btn-primary" data-toggle="modal" data-target="#saveWynikModal" ng-click="clear()">
         <span class="glyphicon glyphicon-flash"></span> <span>Dodaj Wynik</span>
     </button>
-    <button ui-sref-active="active" has-role="SEDZIA"
+    <button ui-sref-active="active" has-role="SEDZIA" ng-disabled="isDisableEdit"
                         		type="submit"
                                 ng-click="update(grafik.wynik.id)"
                                 class="btn btn-primary">
