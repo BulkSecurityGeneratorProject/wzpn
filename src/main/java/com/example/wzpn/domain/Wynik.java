@@ -1,8 +1,10 @@
 package com.example.wzpn.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
+
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
@@ -44,6 +46,7 @@ public class Wynik implements Serializable {
     private String uwagi;
 
     @OneToOne(fetch = FetchType.LAZY)
+    @JsonBackReference
     private Grafik grafik;
 
     public Long getId() {

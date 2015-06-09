@@ -1,14 +1,17 @@
 package com.example.wzpn.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.example.wzpn.domain.util.CustomDateTimeDeserializer;
 import com.example.wzpn.domain.util.CustomDateTimeSerializer;
+
 import org.hibernate.annotations.Type;
 import org.joda.time.DateTime;
 
 import javax.persistence.*;
+
 import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
@@ -48,7 +51,7 @@ public class Grafik implements Serializable {
 
     @OneToOne(mappedBy = "grafik", fetch = FetchType.LAZY)
     @JoinColumn
-    @JsonIgnore
+    @JsonManagedReference
     private Wynik wynik;
 
     public Long getId() {
