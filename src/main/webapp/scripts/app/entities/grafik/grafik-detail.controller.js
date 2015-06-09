@@ -32,6 +32,7 @@ angular.module('wzpnApp')
                 function () {
                     $('#saveWynikModal').modal('hide');
                     console.log($scope.wynik);
+                    $scope.load($stateParams.id);
                 });
         };
 
@@ -39,6 +40,7 @@ angular.module('wzpnApp')
             Wynik.get({id: id}, function(result) {
                 $scope.wynik = result;
                 $('#saveWynikModal').modal('show');
+                $scope.load($stateParams.id);
             });
         };
     });
