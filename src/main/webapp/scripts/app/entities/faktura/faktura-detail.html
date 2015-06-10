@@ -6,8 +6,8 @@
 
 		<div class="div-to-right">
 			Miejscowość: {{faktura.miejscowosc}} <br> Data sprzedaży:
-			{{faktura.dataSprzedazy}} <br> Data wystawienia:
-			{{faktura.dataWystawienia}}
+			{{faktura.dataSprzedazy | date:"dd/MM/yyyy"}} <br> Data wystawienia:
+			{{faktura.dataWystawienia  | date:"dd/MM/yyyy"}}
 		</div>
 		<br> <br> <br> <br>
 		<h2 class="text-center">
@@ -38,28 +38,41 @@
 				<thead>
 					<tr>
 						<th>LP</th>
-						<th>Nazwa towaru</th>
-						<th>Ilość</th>
-						<th>Brutto (PLN)</th>
-						<th>Podatek (PLN)</th>
+						<th>nazwa towaru</th>
+						<th>ilość</th>
+						<th>jedn.</th>
+						<th>cena brutto</th>
+						<th>wartość netto</th>
+						<th>VAT %</th>
+						<th>VAT</th>
+						<th>wartość brutto</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr ng-repeat="pozycja in pozycjeFaktury">
 						<td>{{ $index + 1 }}</td>
 						<td>{{pozycja.nazwa}}</td>
-						<td>{{pozycja.ilosc}}</td>
-						<td>{{pozycja.brutto}}</td>
+						<td>{{pozycja.ilosc | number : 3}}</td>
+						<td>szt.</td>
+						<td>{{pozycja.brutto | number : 2}}</td>
+						<td>{{(pozycja.ilosc * pozycja.brutto) * (100 - pozycja.podatek)/100 | number : 2}}</td>
 						<td>{{pozycja.podatek}}</td>
+						<td>{{pozycja.ilosc * pozycja.brutto * pozycja.podatek / 100 | number : 2}}
+						<td>{{pozycja.ilosc * pozycja.brutto | number : 2}}</td>
+
 					</tr>
 				</tbody>
 				<thead>
 				<tr>
 						<th></th>
 						<th></th>
+						<th></th>
+						<th></th>
 						<th>RAZEM</th>
-						<th>{{lacznaKwota}}</th>
-						<th>{{lacznyPodatek}}</th>
+						<th>{{lacznaKwota | number : 2}}</th>
+						<th></th>
+						<th>{{lacznyVat | number : 2}}</th>
+						<th>{{lacznaKwotaVat | number : 2}}</th>
 					</tr>
 				</thead>
 			</table>
