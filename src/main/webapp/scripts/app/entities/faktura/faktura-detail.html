@@ -61,7 +61,7 @@
 						<td>{{pozycja.ilosc * pozycja.brutto | number : 2}}</td>
 
 
-						<td><button ui-sref-active="active" has-role="KSIEGOWOSC"
+						<td ui-sref-active="active" has-role="KSIEGOWOSC"><button ui-sref-active="active" has-role="KSIEGOWOSC"
                         		type="submit"
                                 ng-click="update(pozycja.id)"
                                 class="btn btn-primary btn-xs">

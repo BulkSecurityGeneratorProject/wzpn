@@ -7,7 +7,7 @@ angular.module('wzpnApp')
                 parent: 'entity',
                 url: '/obiektSportowy',
                 data: {
-                    roles: ['ROLE_USER'],
+                    roles: [],
                     pageTitle: 'wzpnApp.obiektSportowy.home.title'
                 },
                 views: {
@@ -27,7 +27,7 @@ angular.module('wzpnApp')
                 parent: 'entity',
                 url: '/obiektSportowy/:id',
                 data: {
-                    roles: ['ROLE_USER'],
+                    roles: [],
                     pageTitle: 'wzpnApp.obiektSportowy.detail.title'
                 },
                 views: {

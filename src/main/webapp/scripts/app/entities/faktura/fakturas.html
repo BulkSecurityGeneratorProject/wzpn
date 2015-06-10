@@ -115,8 +115,8 @@
                 <tr ng-repeat="faktura in fakturas">
                     <td><a ui-sref="fakturaDetail({id:faktura.id})">{{faktura.id}}</a></td>
                     <td>{{faktura.nazwa}}</td>
-                    <td>{{faktura.dataWystawienia}}</td>
-                    <td>{{faktura.dataSprzedazy}}</td>
+                    <td>{{faktura.dataWystawienia | date:"dd/MM/yyyy"}}</td>
+                    <td>{{faktura.dataSprzedazy | date:"dd/MM/yyyy"}}</td>
                     <td>{{faktura.miejscowosc}}</td>
                     <td>{{faktura.sprzedawca.nazwa}}</td>
                     <td>{{faktura.nabywca.nazwa}}</td>

@@ -51,7 +51,7 @@ angular.module('wzpnApp')
         };
 
         $scope.clear = function () {
-            $scope.faktura = {nazwa: null, dataWystawienia: null, dataSprzedazy: null, miejscowosc: null, id: null};
+            $scope.faktura = {nazwa: null, dataWystawienia: new Date(), dataSprzedazy: new Date(), miejscowosc: "Łódź", id: null};
             $scope.editForm.$setPristine();
             $scope.editForm.$setUntouched();
         };

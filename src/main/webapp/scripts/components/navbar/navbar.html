@@ -32,23 +32,23 @@
                         &#xA0;<span translate="global.menu.entities.liga">liga</span></a></li>
                         <li ui-sref-active="active"><a ui-sref="druzyna"><span class="glyphicon glyphicon-asterisk"></span>
                         &#xA0;<span translate="global.menu.entities.druzyna">druzyna</span></a></li>
-                        <li ui-sref-active="active"><a ui-sref="kara"><span class="glyphicon glyphicon-asterisk"></span>
+                        <li ui-sref-active="active" has-any-role="WYDZIAL_GIER,SEDZIA"><a ui-sref="kara"><span class="glyphicon glyphicon-asterisk"></span>
                         &#xA0;<span translate="global.menu.entities.kara">kara</span></a></li>
-                        <li ui-sref-active="active" has-any-role="WYDZIAL_GIER,ADMINISTRACJA"><a ui-sref="obiektSportowy"><span class="glyphicon glyphicon-asterisk"></span>
+                        <li ui-sref-active="active"><a ui-sref="obiektSportowy"><span class="glyphicon glyphicon-asterisk"></span>
                         &#xA0;<span translate="global.menu.entities.obiektSportowy">obiektSportowy</span></a></li>
-                        <li ui-sref-active="active" has-any-role="WYDZIAL_GIER,SEDZIA"><a ui-sref="grafik"><span class="glyphicon glyphicon-asterisk"></span>
+                        <li ui-sref-active="active"><a ui-sref="grafik"><span class="glyphicon glyphicon-asterisk"></span>
                         &#xA0;<span translate="global.menu.entities.grafik">grafik</span></a></li>
-                        <li ui-sref-active="active"><a ui-sref="wynik"><span class="glyphicon glyphicon-asterisk"></span>
-                        &#xA0;<span translate="global.menu.entities.wynik">wynik</span></a></li>
-                        <li ui-sref-active="active"><a ui-sref="przedsiebiorca"><span class="glyphicon glyphicon-asterisk"></span>
+<!--                         <li ui-sref-active="active"><a ui-sref="wynik"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.wynik">wynik</span></a></li> -->
+                        <li ui-sref-active="active" has-any-role="KSIEGOWOSC,SEKRETARIAT"><a ui-sref="przedsiebiorca"><span class="glyphicon glyphicon-asterisk"></span>
                         &#xA0;<span translate="global.menu.entities.przedsiebiorca">przedsiebiorca</span></a></li>
-                        <li ui-sref-active="active"><a ui-sref="faktura"><span class="glyphicon glyphicon-asterisk"></span>
+                        <li ui-sref-active="active" has-any-role="WYDZIAL_GIER,KSIEGOWOSC,SEKRETARIAT"><a ui-sref="faktura"><span class="glyphicon glyphicon-asterisk"></span>
                         &#xA0;<span translate="global.menu.entities.faktura">faktura</span></a></li>
-                        <li ui-sref-active="active"><a ui-sref="pozycjaFaktury"><span class="glyphicon glyphicon-asterisk"></span>
-                        &#xA0;<span translate="global.menu.entities.pozycjaFaktury">pozycjaFaktury</span></a></li>
-                        <li ui-sref-active="active"><a ui-sref="usluga"><span class="glyphicon glyphicon-asterisk"></span>
+<!--                         <li ui-sref-active="active"><a ui-sref="pozycjaFaktury"><span class="glyphicon glyphicon-asterisk"></span>
+                        &#xA0;<span translate="global.menu.entities.pozycjaFaktury">pozycjaFaktury</span></a></li> -->
+                        <li ui-sref-active="active" has-any-role="WYDZIAL_GIER,KSIEGOWOSC,SEKRETARIAT"><a ui-sref="usluga"><span class="glyphicon glyphicon-asterisk"></span>
                         &#xA0;<span translate="global.menu.entities.usluga">usluga</span></a></li>
-                        <li ui-sref-active="active"><a ui-sref="polecenieZaplaty"><span class="glyphicon glyphicon-asterisk"></span>
+                        <li ui-sref-active="active" has-any-role="WYDZIAL_GIER,KSIEGOWOSC,SEKRETARIAT"><a ui-sref="polecenieZaplaty"><span class="glyphicon glyphicon-asterisk"></span>
                         &#xA0;<span translate="global.menu.entities.polecenieZaplaty">polecenieZaplaty</span></a></li>
                         <!-- JHipster will add entities to the menu here -->
                     </ul>
@@ -75,7 +75,9 @@
                             &#xA0;<span translate="global.menu.account.logout">Log out</span></a></li>
                         <li ui-sref-active="active" ng-switch-when="false"><a ui-sref="login"><span class="glyphicon glyphicon-log-in"></span>
                             &#xA0;<span translate="global.menu.account.login">Authenticate</span></a></li>
-                        <li ui-sref-active="active" ng-switch-when="false"><a ui-sref="register"><span class="glyphicon glyphicon-plus-sign"></span>
+                        <li ui-sref-active="active" ng-switch-when="false" class="disabled">
+                        <!-- <a ui-sref="register"> -->
+                        <a><span class="glyphicon glyphicon-plus-sign"></span>
                             &#xA0;<span translate="global.menu.account.register">Register</span></a></li>
                     </ul>
                 </li>

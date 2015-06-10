@@ -53,7 +53,7 @@
         },
         "messages": {
             "info": {
-                "authenticated": "Jeśli chcesz się <a href=\"#/login\">zalogować</a>, możesz spróbować któregoś z domyślnych kont:<br/>- Administrator (login=\"admin\" i hasło=\"admin\") <br/>- Użytkownik (login=\"user\" i hasło=\"user\").",
+                "authenticated": "Jeśli chcesz się <a href=\"#/login\">zalogować</a>, możesz spróbować któregoś z domyślnych kont:<br/>- Księgowy (login=\"ksiegowy\" i hasło=\"user\") <br/>- Sędzia (login=\"sedzia\" i hasło=\"user\") <br/>- Administrator (login=\"administrator\" i hasło=\"user\") <br/>- Dział gier (login=\"gry\" i hasło=\"user\") <br/>- Pracownik sekretariatu (login=\"sekretarz\" i hasło=\"user\") <br/><br/> Konta systemowe: <br/>- Administrator (login=\"admin\" i hasło=\"admin\") <br/>- Użytkownik (login=\"user\" i hasło=\"user\").",
                 "register": "Nie masz jeszcze konta? <a href=\"#/register\">Zarejestruj się</a>"
             },
             "error": {
