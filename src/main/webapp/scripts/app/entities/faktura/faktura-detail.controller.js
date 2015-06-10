@@ -4,12 +4,13 @@ angular.module('wzpnApp')
     .controller('FakturaDetailController', function ($scope, $filter, $stateParams, Faktura, Przedsiebiorca, PozycjaFaktury) {
         $scope.faktura = {};
         $scope.pozycjeFaktury = {};
+        $scope.fakturas = Faktura.query();
         $scope.load = function (id) {
             Faktura.get({id: id}, function(result) {
               $scope.faktura = result;
             });
             
-         PozycjaFaktury.query(function(result) {
+            PozycjaFaktury.query(function(result) {
             	var resultNew = [];
             	var totalMoney = 0;
             	var totalMoneyVat = 0;
@@ -35,4 +36,45 @@ angular.module('wzpnApp')
             });
         };
         $scope.load($stateParams.id);
+        
+        $scope.create = function () {
+            PozycjaFaktury.update($scope.pozycjaFaktury,
+                function () {
+                   	// $scope.loadAll();
+            		$scope.load($stateParams.id);
+                    $('#savePozycjaFakturyModal').modal('hide');
+                    $scope.clear();
+                });
+        };
+
+        $scope.update = function (id) {
+            PozycjaFaktury.get({id: id}, function(result) {
+            	//result.faktura.id = $stateParams.id;
+                $scope.pozycjaFaktury = result;
+                $('#savePozycjaFakturyModal').modal('show');
+            });
+        };
+
+        $scope.delete = function (id) {
+            PozycjaFaktury.get({id: id}, function(result) {
+                $scope.pozycjaFaktury = result;
+                $('#deletePozycjaFakturyConfirmation').modal('show');
+            });
+        };
+
+        $scope.confirmDelete = function (id) {
+            PozycjaFaktury.delete({id: id},
+                function () {
+                    //$scope.loadAll();
+            		$scope.load($stateParams.id);
+                    $('#deletePozycjaFakturyConfirmation').modal('hide');
+                    $scope.clear();
+                });
+        };
+
+        $scope.clear = function () {
+            $scope.pozycjaFaktury = {nazwa: null, brutto: null, ilosc: null, podatek: null, id: null};
+            $scope.editForm.$setPristine();
+            $scope.editForm.$setUntouched();
+        };
     });

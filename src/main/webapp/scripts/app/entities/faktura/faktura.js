@@ -39,6 +39,7 @@ angular.module('wzpnApp')
                 resolve: {
                     translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
                         $translatePartialLoader.addPart('faktura');
+                        $translatePartialLoader.addPart('pozycjaFaktury');
                         return $translate.refresh();
                     }]
                 }
