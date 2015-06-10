@@ -101,7 +101,7 @@
             <tbody>
                 <tr ng-repeat="kara in karas">
                     <td><a ui-sref="karaDetail({id:kara.id})">{{kara.id}}</a></td>
-                    <td>{{kara.dataOtrzymania}}</td>
+                    <td>{{kara.dataOtrzymania | date: "dd/MM/yyyy"}}</td>
                     <td>{{kara.powod}}</td>
                     <td>{{kara.kwota}}</td>
                     <td>{{kara.druzyna.nazwa}}</td>
