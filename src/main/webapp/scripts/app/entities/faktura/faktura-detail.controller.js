@@ -73,7 +73,8 @@ angular.module('wzpnApp')
         };
 
         $scope.clear = function () {
-            $scope.pozycjaFaktury = {nazwa: null, brutto: null, ilosc: null, podatek: null, id: null};
+            $scope.pozycjaFaktury = {nazwa: null, brutto: null, ilosc: 1, podatek: 23, id: null};
+            $scope.pozycjaFaktury.faktura = $scope.faktura;
             $scope.editForm.$setPristine();
             $scope.editForm.$setUntouched();
         };

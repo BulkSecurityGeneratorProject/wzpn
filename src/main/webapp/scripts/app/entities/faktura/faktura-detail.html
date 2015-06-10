@@ -169,16 +169,16 @@ Czytelny podpis osoby upoważnionej do wystawienia faktury: <br> <br>
 
                         </div>
 
-                        <div class="form-group">
+<!--                         <div class="form-group">
                             <label translate="wzpnApp.pozycjaFaktury.faktura">faktura</label>
                             <select class="form-control" name="faktura" ng-model="pozycjaFaktury.faktura.id" ng-options="faktura.id as faktura.id for faktura in fakturas">
                             </select>
-                        </div>
-<!--                         <div class="form-group">
+                        </div> -->
+                       <div class="form-group">
                             <label translate="wzpnApp.pozycjaFaktury.faktura">faktura</label>
                             <input type="text" class="form-control" name="faktura"
-                                   ng-model="pozycjaFaktury.faktura.id" readonly>
-                        </div> -->
+                                   ng-model="pozycjaFaktury.faktura.id" readonly/>
+                        </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
