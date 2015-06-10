@@ -21,7 +21,7 @@
                         <span translate="wzpnApp.grafik.rozpoczecie">Rozpoczecie</span>
                     </td>
                     <td>
-                        {{grafik.rozpoczecie}}
+                        {{grafik.rozpoczecie | date:"MM/dd/yyyy 'godzina ' HH:mm"}}
                     </td>
                 </tr>
                 <tr>
@@ -54,6 +54,62 @@
                     </td>
                     <td>
                        {{grafik.wynik.wynik}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.wynik.bramkiPierwszej">BramkiPierwszej</span>
+                    </td>
+                    <td>
+                        {{grafik.wynik.bramkiPierwszej}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.wynik.bramkiDrugiej">BramkiDrugiej</span>
+                    </td>
+                    <td>
+                        {{grafik.wynik.bramkiDrugiej}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.wynik.zoltePierwszej">ZoltePierwszej</span>
+                    </td>
+                    <td>
+                        {{grafik.wynik.zoltePierwszej}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.wynik.zolteDrugiej">ZolteDrugiej</span>
+                    </td>
+                    <td>
+                       {{grafik.wynik.zolteDrugiej}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.wynik.czerwonePierwszej">CzerwonePierwszej</span>
+                    </td>
+                    <td>
+                       {{grafik.wynik.czerwonePierwszej}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.wynik.czerwoneDrugiej">CzerwoneDrugiej</span>
+                    </td>
+                    <td>
+                       {{grafik.wynik.czerwoneDrugiej}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span translate="wzpnApp.wynik.uwagi">Uwagi</span>
+                    </td>
+                    <td>
+                        {{grafik.wynik.uwagi}}
                     </td>
                 </tr>
             </tbody>
