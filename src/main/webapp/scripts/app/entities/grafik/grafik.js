@@ -19,6 +19,7 @@ angular.module('wzpnApp')
                 resolve: {
                     translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
                         $translatePartialLoader.addPart('grafik');
+                        $translatePartialLoader.addPart('wynik');
                         return $translate.refresh();
                     }]
                 }
@@ -39,6 +40,7 @@ angular.module('wzpnApp')
                 resolve: {
                     translatePartialLoader: ['$translate', '$translatePartialLoader', function ($translate, $translatePartialLoader) {
                         $translatePartialLoader.addPart('grafik');
+                        $translatePartialLoader.addPart('wynik');
                         return $translate.refresh();
                     }]
                 }
