@@ -1,0 +1,73 @@
+{
+    "wzpnApp": {
+        "sprawozdanie" : {
+            "home": {
+                "title": "Sprawozdanies",
+                "createLabel": "Créer un nouveau Sprawozdanie",
+                "createOrEditLabel": "Créer ou éditer un Sprawozdanie"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Sprawozdanie {{ id }} ?"
+            },
+            "detail": {
+                "title": "Sprawozdanie"
+            },
+            "a1": "A1",
+            "a2": "A2",
+            "a3": "A3",
+            "a4": "A4",
+            "a5": "A5",
+            "a6": "A6",
+            "a7": "A7",
+            "a8": "A8",
+            "a9": "A9",
+            "a10": "A10",
+            "p1": "P1",
+            "p2": "P2",
+            "p3": "P3",
+            "p4": "P4",
+            "p5": "P5",
+            "p6": "P6",
+            "p7": "P7",
+            "p8": "P8",
+            "p9": "P9",
+            "p10": "P10",
+            "p11": "P11",
+            "p12": "P12",
+            "p13": "P13",
+            "p14": "P14",
+            "p15": "P15",
+            "rok": "Rok",
+            "dzienSporzadzenia": "DzienSporzadzenia",
+            "w1": "W1",
+            "w2": "W2",
+            "w3": "W3",
+            "w4": "W4",
+            "w5": "W5",
+            "w6": "W6",
+            "w7": "W7",
+            "w8": "W8",
+            "w9": "W9",
+            "w10": "W10",
+            "w11": "W11",
+            "w12": "W12",
+            "w13": "W13",
+            "w14": "W14",
+            "w15": "W15",
+            "w16": "W16",
+            "w17": "W17",
+            "w18": "W18",
+            "w19": "W19",
+            "w20": "W20",
+            "w21": "W21",
+            "w22": "W22",
+            "w23": "W23",
+            "w24": "W24",
+            "w25": "W25",
+            "w26": "W26",
+            "w27": "W27",
+            "w28": "W28"
+        }
+    }
+}
+

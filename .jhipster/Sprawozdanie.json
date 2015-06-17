@@ -1,0 +1,510 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "a1",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "A1",
+            "fieldNameUnderscored": "a1",
+            "fieldInJavaBeanMethod": "a1",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "a2",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "A2",
+            "fieldNameUnderscored": "a2",
+            "fieldInJavaBeanMethod": "a2",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "a3",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "A3",
+            "fieldNameUnderscored": "a3",
+            "fieldInJavaBeanMethod": "a3",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "a4",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "A4",
+            "fieldNameUnderscored": "a4",
+            "fieldInJavaBeanMethod": "a4",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "a5",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "A5",
+            "fieldNameUnderscored": "a5",
+            "fieldInJavaBeanMethod": "a5",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "a6",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "A6",
+            "fieldNameUnderscored": "a6",
+            "fieldInJavaBeanMethod": "a6",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "a7",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "A7",
+            "fieldNameUnderscored": "a7",
+            "fieldInJavaBeanMethod": "a7",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "a8",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "A8",
+            "fieldNameUnderscored": "a8",
+            "fieldInJavaBeanMethod": "a8",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 9,
+            "fieldName": "a9",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "A9",
+            "fieldNameUnderscored": "a9",
+            "fieldInJavaBeanMethod": "a9",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 10,
+            "fieldName": "a10",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "A10",
+            "fieldNameUnderscored": "a10",
+            "fieldInJavaBeanMethod": "a10",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 11,
+            "fieldName": "p1",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "P1",
+            "fieldNameUnderscored": "p1",
+            "fieldInJavaBeanMethod": "p1",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 12,
+            "fieldName": "p2",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "P2",
+            "fieldNameUnderscored": "p2",
+            "fieldInJavaBeanMethod": "p2",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 13,
+            "fieldName": "p3",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "P3",
+            "fieldNameUnderscored": "p3",
+            "fieldInJavaBeanMethod": "p3",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 14,
+            "fieldName": "p4",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "P4",
+            "fieldNameUnderscored": "p4",
+            "fieldInJavaBeanMethod": "p4",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 15,
+            "fieldName": "p5",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "P5",
+            "fieldNameUnderscored": "p5",
+            "fieldInJavaBeanMethod": "p5",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 16,
+            "fieldName": "p6",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "P6",
+            "fieldNameUnderscored": "p6",
+            "fieldInJavaBeanMethod": "p6",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 17,
+            "fieldName": "p7",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "P7",
+            "fieldNameUnderscored": "p7",
+            "fieldInJavaBeanMethod": "p7",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 18,
+            "fieldName": "p8",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "P8",
+            "fieldNameUnderscored": "p8",
+            "fieldInJavaBeanMethod": "p8",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 19,
+            "fieldName": "p9",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "P9",
+            "fieldNameUnderscored": "p9",
+            "fieldInJavaBeanMethod": "p9",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 20,
+            "fieldName": "p10",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "P10",
+            "fieldNameUnderscored": "p10",
+            "fieldInJavaBeanMethod": "p10",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 21,
+            "fieldName": "p11",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "P11",
+            "fieldNameUnderscored": "p11",
+            "fieldInJavaBeanMethod": "p11",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 22,
+            "fieldName": "p12",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "P12",
+            "fieldNameUnderscored": "p12",
+            "fieldInJavaBeanMethod": "p12",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 23,
+            "fieldName": "p13",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "P13",
+            "fieldNameUnderscored": "p13",
+            "fieldInJavaBeanMethod": "p13",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 24,
+            "fieldName": "p14",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "P14",
+            "fieldNameUnderscored": "p14",
+            "fieldInJavaBeanMethod": "p14",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 25,
+            "fieldName": "p15",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "P15",
+            "fieldNameUnderscored": "p15",
+            "fieldInJavaBeanMethod": "p15",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 26,
+            "fieldName": "rok",
+            "fieldType": "Integer",
+            "fieldNameCapitalized": "Rok",
+            "fieldNameUnderscored": "rok",
+            "fieldInJavaBeanMethod": "Rok",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 27,
+            "fieldName": "dzienSporzadzenia",
+            "fieldType": "DateTime",
+            "fieldNameCapitalized": "DzienSporzadzenia",
+            "fieldNameUnderscored": "dzien_sporzadzenia",
+            "fieldInJavaBeanMethod": "DzienSporzadzenia",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 28,
+            "fieldName": "w1",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W1",
+            "fieldNameUnderscored": "w1",
+            "fieldInJavaBeanMethod": "w1",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 29,
+            "fieldName": "w2",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W2",
+            "fieldNameUnderscored": "w2",
+            "fieldInJavaBeanMethod": "w2",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 30,
+            "fieldName": "w3",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W3",
+            "fieldNameUnderscored": "w3",
+            "fieldInJavaBeanMethod": "w3",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 31,
+            "fieldName": "w4",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W4",
+            "fieldNameUnderscored": "w4",
+            "fieldInJavaBeanMethod": "w4",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 32,
+            "fieldName": "w5",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W5",
+            "fieldNameUnderscored": "w5",
+            "fieldInJavaBeanMethod": "w5",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 33,
+            "fieldName": "w6",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W6",
+            "fieldNameUnderscored": "w6",
+            "fieldInJavaBeanMethod": "w6",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 34,
+            "fieldName": "w7",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W7",
+            "fieldNameUnderscored": "w7",
+            "fieldInJavaBeanMethod": "w7",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 35,
+            "fieldName": "w8",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W8",
+            "fieldNameUnderscored": "w8",
+            "fieldInJavaBeanMethod": "w8",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 36,
+            "fieldName": "w9",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W9",
+            "fieldNameUnderscored": "w9",
+            "fieldInJavaBeanMethod": "w9",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 37,
+            "fieldName": "w10",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W10",
+            "fieldNameUnderscored": "w10",
+            "fieldInJavaBeanMethod": "w10",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 38,
+            "fieldName": "w11",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W11",
+            "fieldNameUnderscored": "w11",
+            "fieldInJavaBeanMethod": "w11",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 39,
+            "fieldName": "w12",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W12",
+            "fieldNameUnderscored": "w12",
+            "fieldInJavaBeanMethod": "w12",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 40,
+            "fieldName": "w13",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W13",
+            "fieldNameUnderscored": "w13",
+            "fieldInJavaBeanMethod": "w13",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 41,
+            "fieldName": "w14",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W14",
+            "fieldNameUnderscored": "w14",
+            "fieldInJavaBeanMethod": "w14",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 42,
+            "fieldName": "w15",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W15",
+            "fieldNameUnderscored": "w15",
+            "fieldInJavaBeanMethod": "w15",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 43,
+            "fieldName": "w16",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W16",
+            "fieldNameUnderscored": "w16",
+            "fieldInJavaBeanMethod": "w16",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 44,
+            "fieldName": "w17",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W17",
+            "fieldNameUnderscored": "w17",
+            "fieldInJavaBeanMethod": "w17",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 45,
+            "fieldName": "w18",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W18",
+            "fieldNameUnderscored": "w18",
+            "fieldInJavaBeanMethod": "w18",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 46,
+            "fieldName": "w19",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W19",
+            "fieldNameUnderscored": "w19",
+            "fieldInJavaBeanMethod": "w19",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 47,
+            "fieldName": "w20",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W20",
+            "fieldNameUnderscored": "w20",
+            "fieldInJavaBeanMethod": "w20",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 48,
+            "fieldName": "w21",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W21",
+            "fieldNameUnderscored": "w21",
+            "fieldInJavaBeanMethod": "w21",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 49,
+            "fieldName": "w22",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W22",
+            "fieldNameUnderscored": "w22",
+            "fieldInJavaBeanMethod": "w22",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 50,
+            "fieldName": "w23",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W23",
+            "fieldNameUnderscored": "w23",
+            "fieldInJavaBeanMethod": "w23",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 51,
+            "fieldName": "w24",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W24",
+            "fieldNameUnderscored": "w24",
+            "fieldInJavaBeanMethod": "w24",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 52,
+            "fieldName": "w25",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W25",
+            "fieldNameUnderscored": "w25",
+            "fieldInJavaBeanMethod": "w25",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 53,
+            "fieldName": "w26",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W26",
+            "fieldNameUnderscored": "w26",
+            "fieldInJavaBeanMethod": "w26",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 54,
+            "fieldName": "w27",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W27",
+            "fieldNameUnderscored": "w27",
+            "fieldInJavaBeanMethod": "w27",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 55,
+            "fieldName": "w28",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "W28",
+            "fieldNameUnderscored": "w28",
+            "fieldInJavaBeanMethod": "w28",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": false,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": true,
+    "fieldsContainDateTime": true,
+    "fieldsContainDate": false,
+    "changelogDate": "20150617082345",
+    "pagination": "no",
+    "validation": false
+}

@@ -1,0 +1,33 @@
+{
+    "wzpnApp": {
+        "pracownik" : {
+            "home": {
+                "title": "Pracownik",
+                "createLabel": "Dodaj Pracownik",
+                "createOrEditLabel": "Dodaj lub edytuj: Pracownik"
+            },
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć Pracownik {{ id }}?"
+            },
+            "detail": {
+                "title": "Pracownik"
+            },
+            "login": "Login",
+            "imie": "Imie",
+            "nazwisko": "Nazwisko",
+            "pesel": "Pesel",
+            "nip": "Nip",
+            "ulica": "Ulica",
+            "kodPocztowy": "KodPocztowy",
+            "miasto": "Miasto",
+            "pensja": "Pensja",
+            "dataZatrudnienia": "DataZatrudnienia",
+            "sekretariat": "Sekretariat",
+            "wydzialGier": "WydzialGier",
+            "ksiegowosc": "Ksiegowosc",
+            "administracja": "Administracja",
+            "sedzia": "Sedzia",
+            "opis": "Opis"
+        }
+    }
+}

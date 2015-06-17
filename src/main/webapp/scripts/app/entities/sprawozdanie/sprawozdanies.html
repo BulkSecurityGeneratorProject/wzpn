@@ -1,0 +1,538 @@
+<div>
+
+    <h2 translate="wzpnApp.sprawozdanie.home.title">Sprawozdanie</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#saveSprawozdanieModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="wzpnApp.sprawozdanie.home.createLabel">Create a new Sprawozdanie</span>
+    </button>
+    <div class="modal fade" id="saveSprawozdanieModal" tabindex="-1" role="dialog" aria-labelledby="mySprawozdanieLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="editForm" role="form" novalidate ng-submit="create()">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="mySprawozdanieLabel" translate="wzpnApp.sprawozdanie.home.createOrEditLabel">Create or edit a Sprawozdanie</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="sprawozdanie.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.a1">A1</label>
+                            <input type="number" class="form-control" name="a1"
+                                   ng-model="sprawozdanie.a1">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.a2">A2</label>
+                            <input type="number" class="form-control" name="a2"
+                                   ng-model="sprawozdanie.a2">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.a3">A3</label>
+                            <input type="number" class="form-control" name="a3"
+                                   ng-model="sprawozdanie.a3">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.a4">A4</label>
+                            <input type="number" class="form-control" name="a4"
+                                   ng-model="sprawozdanie.a4">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.a5">A5</label>
+                            <input type="number" class="form-control" name="a5"
+                                   ng-model="sprawozdanie.a5">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.a6">A6</label>
+                            <input type="number" class="form-control" name="a6"
+                                   ng-model="sprawozdanie.a6">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.a7">A7</label>
+                            <input type="number" class="form-control" name="a7"
+                                   ng-model="sprawozdanie.a7">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.a8">A8</label>
+                            <input type="number" class="form-control" name="a8"
+                                   ng-model="sprawozdanie.a8">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.a9">A9</label>
+                            <input type="number" class="form-control" name="a9"
+                                   ng-model="sprawozdanie.a9">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.a10">A10</label>
+                            <input type="number" class="form-control" name="a10"
+                                   ng-model="sprawozdanie.a10">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.p1">P1</label>
+                            <input type="number" class="form-control" name="p1"
+                                   ng-model="sprawozdanie.p1">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.p2">P2</label>
+                            <input type="number" class="form-control" name="p2"
+                                   ng-model="sprawozdanie.p2">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.p3">P3</label>
+                            <input type="number" class="form-control" name="p3"
+                                   ng-model="sprawozdanie.p3">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.p4">P4</label>
+                            <input type="number" class="form-control" name="p4"
+                                   ng-model="sprawozdanie.p4">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.p5">P5</label>
+                            <input type="number" class="form-control" name="p5"
+                                   ng-model="sprawozdanie.p5">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.p6">P6</label>
+                            <input type="number" class="form-control" name="p6"
+                                   ng-model="sprawozdanie.p6">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.p7">P7</label>
+                            <input type="number" class="form-control" name="p7"
+                                   ng-model="sprawozdanie.p7">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.p8">P8</label>
+                            <input type="number" class="form-control" name="p8"
+                                   ng-model="sprawozdanie.p8">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.p9">P9</label>
+                            <input type="number" class="form-control" name="p9"
+                                   ng-model="sprawozdanie.p9">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.p10">P10</label>
+                            <input type="number" class="form-control" name="p10"
+                                   ng-model="sprawozdanie.p10">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.p11">P11</label>
+                            <input type="number" class="form-control" name="p11"
+                                   ng-model="sprawozdanie.p11">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.p12">P12</label>
+                            <input type="number" class="form-control" name="p12"
+                                   ng-model="sprawozdanie.p12">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.p13">P13</label>
+                            <input type="number" class="form-control" name="p13"
+                                   ng-model="sprawozdanie.p13">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.p14">P14</label>
+                            <input type="number" class="form-control" name="p14"
+                                   ng-model="sprawozdanie.p14">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.p15">P15</label>
+                            <input type="number" class="form-control" name="p15"
+                                   ng-model="sprawozdanie.p15">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.rok">Rok</label>
+                            <input type="number" class="form-control" name="rok"
+                                   ng-model="sprawozdanie.rok">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.dzienSporzadzenia">DzienSporzadzenia</label>
+                            <input type="datetime-local" class="form-control" name="dzienSporzadzenia"
+                                   ng-model="sprawozdanie.dzienSporzadzenia" ng-model-options="{timezone: 'UTC'}">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w1">W1</label>
+                            <input type="number" class="form-control" name="w1"
+                                   ng-model="sprawozdanie.w1">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w2">W2</label>
+                            <input type="number" class="form-control" name="w2"
+                                   ng-model="sprawozdanie.w2">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w3">W3</label>
+                            <input type="number" class="form-control" name="w3"
+                                   ng-model="sprawozdanie.w3">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w4">W4</label>
+                            <input type="number" class="form-control" name="w4"
+                                   ng-model="sprawozdanie.w4">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w5">W5</label>
+                            <input type="number" class="form-control" name="w5"
+                                   ng-model="sprawozdanie.w5">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w6">W6</label>
+                            <input type="number" class="form-control" name="w6"
+                                   ng-model="sprawozdanie.w6">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w7">W7</label>
+                            <input type="number" class="form-control" name="w7"
+                                   ng-model="sprawozdanie.w7">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w8">W8</label>
+                            <input type="number" class="form-control" name="w8"
+                                   ng-model="sprawozdanie.w8">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w9">W9</label>
+                            <input type="number" class="form-control" name="w9"
+                                   ng-model="sprawozdanie.w9">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w10">W10</label>
+                            <input type="number" class="form-control" name="w10"
+                                   ng-model="sprawozdanie.w10">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w11">W11</label>
+                            <input type="number" class="form-control" name="w11"
+                                   ng-model="sprawozdanie.w11">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w12">W12</label>
+                            <input type="number" class="form-control" name="w12"
+                                   ng-model="sprawozdanie.w12">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w13">W13</label>
+                            <input type="number" class="form-control" name="w13"
+                                   ng-model="sprawozdanie.w13">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w14">W14</label>
+                            <input type="number" class="form-control" name="w14"
+                                   ng-model="sprawozdanie.w14">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w15">W15</label>
+                            <input type="number" class="form-control" name="w15"
+                                   ng-model="sprawozdanie.w15">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w16">W16</label>
+                            <input type="number" class="form-control" name="w16"
+                                   ng-model="sprawozdanie.w16">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w17">W17</label>
+                            <input type="number" class="form-control" name="w17"
+                                   ng-model="sprawozdanie.w17">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w18">W18</label>
+                            <input type="number" class="form-control" name="w18"
+                                   ng-model="sprawozdanie.w18">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w19">W19</label>
+                            <input type="number" class="form-control" name="w19"
+                                   ng-model="sprawozdanie.w19">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w20">W20</label>
+                            <input type="number" class="form-control" name="w20"
+                                   ng-model="sprawozdanie.w20">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w21">W21</label>
+                            <input type="number" class="form-control" name="w21"
+                                   ng-model="sprawozdanie.w21">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w22">W22</label>
+                            <input type="number" class="form-control" name="w22"
+                                   ng-model="sprawozdanie.w22">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w23">W23</label>
+                            <input type="number" class="form-control" name="w23"
+                                   ng-model="sprawozdanie.w23">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w24">W24</label>
+                            <input type="number" class="form-control" name="w24"
+                                   ng-model="sprawozdanie.w24">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w25">W25</label>
+                            <input type="number" class="form-control" name="w25"
+                                   ng-model="sprawozdanie.w25">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w26">W26</label>
+                            <input type="number" class="form-control" name="w26"
+                                   ng-model="sprawozdanie.w26">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w27">W27</label>
+                            <input type="number" class="form-control" name="w27"
+                                   ng-model="sprawozdanie.w27">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.sprawozdanie.w28">W28</label>
+                            <input type="number" class="form-control" name="w28"
+                                   ng-model="sprawozdanie.w28">
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deleteSprawozdanieConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(sprawozdanie.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="wzpnApp.sprawozdanie.delete.question" translate-values="{id: '{{sprawozdanie.id}}'}">Are you sure you want to delete this Sprawozdanie?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="wzpnApp.sprawozdanie.a1">A1</th>
+                    <th translate="wzpnApp.sprawozdanie.a2">A2</th>
+                    <th translate="wzpnApp.sprawozdanie.a3">A3</th>
+                    <th translate="wzpnApp.sprawozdanie.a4">A4</th>
+                    <th translate="wzpnApp.sprawozdanie.a5">A5</th>
+                    <th translate="wzpnApp.sprawozdanie.a6">A6</th>
+                    <th translate="wzpnApp.sprawozdanie.a7">A7</th>
+                    <th translate="wzpnApp.sprawozdanie.a8">A8</th>
+                    <th translate="wzpnApp.sprawozdanie.a9">A9</th>
+                    <th translate="wzpnApp.sprawozdanie.a10">A10</th>
+                    <th translate="wzpnApp.sprawozdanie.p1">P1</th>
+                    <th translate="wzpnApp.sprawozdanie.p2">P2</th>
+                    <th translate="wzpnApp.sprawozdanie.p3">P3</th>
+                    <th translate="wzpnApp.sprawozdanie.p4">P4</th>
+                    <th translate="wzpnApp.sprawozdanie.p5">P5</th>
+                    <th translate="wzpnApp.sprawozdanie.p6">P6</th>
+                    <th translate="wzpnApp.sprawozdanie.p7">P7</th>
+                    <th translate="wzpnApp.sprawozdanie.p8">P8</th>
+                    <th translate="wzpnApp.sprawozdanie.p9">P9</th>
+                    <th translate="wzpnApp.sprawozdanie.p10">P10</th>
+                    <th translate="wzpnApp.sprawozdanie.p11">P11</th>
+                    <th translate="wzpnApp.sprawozdanie.p12">P12</th>
+                    <th translate="wzpnApp.sprawozdanie.p13">P13</th>
+                    <th translate="wzpnApp.sprawozdanie.p14">P14</th>
+                    <th translate="wzpnApp.sprawozdanie.p15">P15</th>
+                    <th translate="wzpnApp.sprawozdanie.rok">Rok</th>
+                    <th translate="wzpnApp.sprawozdanie.dzienSporzadzenia">DzienSporzadzenia</th>
+                    <th translate="wzpnApp.sprawozdanie.w1">W1</th>
+                    <th translate="wzpnApp.sprawozdanie.w2">W2</th>
+                    <th translate="wzpnApp.sprawozdanie.w3">W3</th>
+                    <th translate="wzpnApp.sprawozdanie.w4">W4</th>
+                    <th translate="wzpnApp.sprawozdanie.w5">W5</th>
+                    <th translate="wzpnApp.sprawozdanie.w6">W6</th>
+                    <th translate="wzpnApp.sprawozdanie.w7">W7</th>
+                    <th translate="wzpnApp.sprawozdanie.w8">W8</th>
+                    <th translate="wzpnApp.sprawozdanie.w9">W9</th>
+                    <th translate="wzpnApp.sprawozdanie.w10">W10</th>
+                    <th translate="wzpnApp.sprawozdanie.w11">W11</th>
+                    <th translate="wzpnApp.sprawozdanie.w12">W12</th>
+                    <th translate="wzpnApp.sprawozdanie.w13">W13</th>
+                    <th translate="wzpnApp.sprawozdanie.w14">W14</th>
+                    <th translate="wzpnApp.sprawozdanie.w15">W15</th>
+                    <th translate="wzpnApp.sprawozdanie.w16">W16</th>
+                    <th translate="wzpnApp.sprawozdanie.w17">W17</th>
+                    <th translate="wzpnApp.sprawozdanie.w18">W18</th>
+                    <th translate="wzpnApp.sprawozdanie.w19">W19</th>
+                    <th translate="wzpnApp.sprawozdanie.w20">W20</th>
+                    <th translate="wzpnApp.sprawozdanie.w21">W21</th>
+                    <th translate="wzpnApp.sprawozdanie.w22">W22</th>
+                    <th translate="wzpnApp.sprawozdanie.w23">W23</th>
+                    <th translate="wzpnApp.sprawozdanie.w24">W24</th>
+                    <th translate="wzpnApp.sprawozdanie.w25">W25</th>
+                    <th translate="wzpnApp.sprawozdanie.w26">W26</th>
+                    <th translate="wzpnApp.sprawozdanie.w27">W27</th>
+                    <th translate="wzpnApp.sprawozdanie.w28">W28</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="sprawozdanie in sprawozdanies">
+                    <td><a ui-sref="sprawozdanieDetail({id:sprawozdanie.id})">{{sprawozdanie.id}}</a></td>
+                    <td>{{sprawozdanie.a1}}</td>
+                    <td>{{sprawozdanie.a2}}</td>
+                    <td>{{sprawozdanie.a3}}</td>
+                    <td>{{sprawozdanie.a4}}</td>
+                    <td>{{sprawozdanie.a5}}</td>
+                    <td>{{sprawozdanie.a6}}</td>
+                    <td>{{sprawozdanie.a7}}</td>
+                    <td>{{sprawozdanie.a8}}</td>
+                    <td>{{sprawozdanie.a9}}</td>
+                    <td>{{sprawozdanie.a10}}</td>
+                    <td>{{sprawozdanie.p1}}</td>
+                    <td>{{sprawozdanie.p2}}</td>
+                    <td>{{sprawozdanie.p3}}</td>
+                    <td>{{sprawozdanie.p4}}</td>
+                    <td>{{sprawozdanie.p5}}</td>
+                    <td>{{sprawozdanie.p6}}</td>
+                    <td>{{sprawozdanie.p7}}</td>
+                    <td>{{sprawozdanie.p8}}</td>
+                    <td>{{sprawozdanie.p9}}</td>
+                    <td>{{sprawozdanie.p10}}</td>
+                    <td>{{sprawozdanie.p11}}</td>
+                    <td>{{sprawozdanie.p12}}</td>
+                    <td>{{sprawozdanie.p13}}</td>
+                    <td>{{sprawozdanie.p14}}</td>
+                    <td>{{sprawozdanie.p15}}</td>
+                    <td>{{sprawozdanie.rok}}</td>
+                    <td>{{sprawozdanie.dzienSporzadzenia}}</td>
+                    <td>{{sprawozdanie.w1}}</td>
+                    <td>{{sprawozdanie.w2}}</td>
+                    <td>{{sprawozdanie.w3}}</td>
+                    <td>{{sprawozdanie.w4}}</td>
+                    <td>{{sprawozdanie.w5}}</td>
+                    <td>{{sprawozdanie.w6}}</td>
+                    <td>{{sprawozdanie.w7}}</td>
+                    <td>{{sprawozdanie.w8}}</td>
+                    <td>{{sprawozdanie.w9}}</td>
+                    <td>{{sprawozdanie.w10}}</td>
+                    <td>{{sprawozdanie.w11}}</td>
+                    <td>{{sprawozdanie.w12}}</td>
+                    <td>{{sprawozdanie.w13}}</td>
+                    <td>{{sprawozdanie.w14}}</td>
+                    <td>{{sprawozdanie.w15}}</td>
+                    <td>{{sprawozdanie.w16}}</td>
+                    <td>{{sprawozdanie.w17}}</td>
+                    <td>{{sprawozdanie.w18}}</td>
+                    <td>{{sprawozdanie.w19}}</td>
+                    <td>{{sprawozdanie.w20}}</td>
+                    <td>{{sprawozdanie.w21}}</td>
+                    <td>{{sprawozdanie.w22}}</td>
+                    <td>{{sprawozdanie.w23}}</td>
+                    <td>{{sprawozdanie.w24}}</td>
+                    <td>{{sprawozdanie.w25}}</td>
+                    <td>{{sprawozdanie.w26}}</td>
+                    <td>{{sprawozdanie.w27}}</td>
+                    <td>{{sprawozdanie.w28}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="sprawozdanieDetail({id:sprawozdanie.id})"
+                                class="btn btn-info">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="update(sprawozdanie.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(sprawozdanie.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

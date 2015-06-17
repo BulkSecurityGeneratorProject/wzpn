@@ -1,0 +1,34 @@
+{
+    "wzpnApp": {
+        "pracownik" : {
+            "home": {
+                "title": "Pracowniks",
+                "createLabel": "Créer un nouveau Pracownik",
+                "createOrEditLabel": "Créer ou éditer un Pracownik"
+            },
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Pracownik {{ id }} ?"
+            },
+            "detail": {
+                "title": "Pracownik"
+            },
+            "login": "Login",
+            "imie": "Imie",
+            "nazwisko": "Nazwisko",
+            "pesel": "Pesel",
+            "nip": "Nip",
+            "ulica": "Ulica",
+            "kodPocztowy": "KodPocztowy",
+            "miasto": "Miasto",
+            "pensja": "Pensja",
+            "dataZatrudnienia": "DataZatrudnienia",
+            "sekretariat": "Sekretariat",
+            "wydzialGier": "WydzialGier",
+            "ksiegowosc": "Ksiegowosc",
+            "administracja": "Administracja",
+            "sedzia": "Sedzia",
+            "opis": "Opis"
+        }
+    }
+}
+

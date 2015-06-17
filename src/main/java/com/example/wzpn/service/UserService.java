@@ -2,12 +2,15 @@ package com.example.wzpn.service;
 
 import com.example.wzpn.domain.Authority;
 import com.example.wzpn.domain.PersistentToken;
+import com.example.wzpn.domain.Pracownik;
 import com.example.wzpn.domain.User;
 import com.example.wzpn.repository.AuthorityRepository;
 import com.example.wzpn.repository.PersistentTokenRepository;
 import com.example.wzpn.repository.UserRepository;
+import com.example.wzpn.security.AuthoritiesConstants;
 import com.example.wzpn.security.SecurityUtils;
 import com.example.wzpn.service.util.RandomUtil;
+
 import org.joda.time.DateTime;
 import org.joda.time.LocalDate;
 import org.slf4j.Logger;
@@ -18,6 +21,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.inject.Inject;
+
 import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
@@ -81,12 +85,54 @@ public class UserService {
         log.debug("Created Information for User: {}", newUser);
         return newUser;
     }
+    
+    public User createUserInformation(Pracownik pracownik) {
+		User newUser = new User();
+		Authority authority = authorityRepository.findOne("ROLE_USER");
+		Set<Authority> authorities = new HashSet<>();
+		String encryptedPassword = passwordEncoder.encode("user");
+		newUser.setLogin(pracownik.getLogin());
+		// new user gets initially a generated password
+		newUser.setPassword(encryptedPassword);
+		newUser.setFirstName(pracownik.getImie());
+		newUser.setLastName(pracownik.getNazwisko());
+		newUser.setEmail(pracownik.getLogin() + "@localhost");
+		newUser.setLangKey("pl");
+		// new user is not active
+		newUser.setActivated(true);
+		// new user gets registration key
+		newUser.setActivationKey(RandomUtil.generateActivationKey());
+		authorities.add(authority);
+		if (pracownik.getAdministracja() != null && pracownik.getAdministracja().booleanValue() == true)
+			authorities.add(authorityRepository.findOne(AuthoritiesConstants.ADMINISTRACJA));
+		if (pracownik.getKsiegowosc() != null && pracownik.getKsiegowosc().booleanValue() == true)
+			authorities.add(authorityRepository.findOne(AuthoritiesConstants.KSIEGOWOSC));
+		if (pracownik.getSedzia() != null && pracownik.getSedzia().booleanValue() == true)
+			authorities.add(authorityRepository.findOne(AuthoritiesConstants.SEDZIA));
+		if (pracownik.getSekretariat() != null && pracownik.getSekretariat().booleanValue() == true)
+			authorities.add(authorityRepository.findOne(AuthoritiesConstants.SEKRETARIAT));
+		if (pracownik.getWydzialGier() != null && pracownik.getWydzialGier().booleanValue() == true)
+			authorities.add(authorityRepository.findOne(AuthoritiesConstants.WYDZIAL_GIER));
+		newUser.setAuthorities(authorities);
+		userRepository.save(newUser);
+		log.debug("Created Information for User: {}", newUser);
+		return newUser;
+    }
 
     public void updateUserInformation(String firstName, String lastName, String email) {
         userRepository.findOneByLogin(SecurityUtils.getCurrentLogin()).ifPresent(u -> {
             u.setFirstName(firstName);
             u.setLastName(lastName);
             u.setEmail(email);
+            userRepository.save(u);
+            log.debug("Changed Information for User: {}", u);
+        });
+    }
+    
+    public void updateUserInformation(Pracownik pracownik) {
+        userRepository.findOneByLogin(SecurityUtils.getCurrentLogin()).ifPresent(u -> {
+            u.setFirstName(pracownik.getImie());
+            u.setLastName(pracownik.getNazwisko());
             userRepository.save(u);
             log.debug("Changed Information for User: {}", u);
         });

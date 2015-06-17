@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <!--
+        Added the entity Sprawozdanie.
+    -->
+    <changeSet id="20150617082345" author="jhipster">
+        <createTable tableName="SPRAWOZDANIE">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="a1" type="decimal(10,2)"/>
+            <column name="a2" type="decimal(10,2)"/>
+            <column name="a3" type="decimal(10,2)"/>
+            <column name="a4" type="decimal(10,2)"/>
+            <column name="a5" type="decimal(10,2)"/>
+            <column name="a6" type="decimal(10,2)"/>
+            <column name="a7" type="decimal(10,2)"/>
+            <column name="a8" type="decimal(10,2)"/>
+            <column name="a9" type="decimal(10,2)"/>
+            <column name="a10" type="decimal(10,2)"/>
+            <column name="p1" type="decimal(10,2)"/>
+            <column name="p2" type="decimal(10,2)"/>
+            <column name="p3" type="decimal(10,2)"/>
+            <column name="p4" type="decimal(10,2)"/>
+            <column name="p5" type="decimal(10,2)"/>
+            <column name="p6" type="decimal(10,2)"/>
+            <column name="p7" type="decimal(10,2)"/>
+            <column name="p8" type="decimal(10,2)"/>
+            <column name="p9" type="decimal(10,2)"/>
+            <column name="p10" type="decimal(10,2)"/>
+            <column name="p11" type="decimal(10,2)"/>
+            <column name="p12" type="decimal(10,2)"/>
+            <column name="p13" type="decimal(10,2)"/>
+            <column name="p14" type="decimal(10,2)"/>
+            <column name="p15" type="decimal(10,2)"/>
+            <column name="rok" type="integer"/>
+            <column name="dzien_sporzadzenia" type="timestamp"/>
+            <column name="w1" type="decimal(10,2)"/>
+            <column name="w2" type="decimal(10,2)"/>
+            <column name="w3" type="decimal(10,2)"/>
+            <column name="w4" type="decimal(10,2)"/>
+            <column name="w5" type="decimal(10,2)"/>
+            <column name="w6" type="decimal(10,2)"/>
+            <column name="w7" type="decimal(10,2)"/>
+            <column name="w8" type="decimal(10,2)"/>
+            <column name="w9" type="decimal(10,2)"/>
+            <column name="w10" type="decimal(10,2)"/>
+            <column name="w11" type="decimal(10,2)"/>
+            <column name="w12" type="decimal(10,2)"/>
+            <column name="w13" type="decimal(10,2)"/>
+            <column name="w14" type="decimal(10,2)"/>
+            <column name="w15" type="decimal(10,2)"/>
+            <column name="w16" type="decimal(10,2)"/>
+            <column name="w17" type="decimal(10,2)"/>
+            <column name="w18" type="decimal(10,2)"/>
+            <column name="w19" type="decimal(10,2)"/>
+            <column name="w20" type="decimal(10,2)"/>
+            <column name="w21" type="decimal(10,2)"/>
+            <column name="w22" type="decimal(10,2)"/>
+            <column name="w23" type="decimal(10,2)"/>
+            <column name="w24" type="decimal(10,2)"/>
+            <column name="w25" type="decimal(10,2)"/>
+            <column name="w26" type="decimal(10,2)"/>
+            <column name="w27" type="decimal(10,2)"/>
+            <column name="w28" type="decimal(10,2)"/>
+        </createTable>
+        <dropDefaultValue tableName="SPRAWOZDANIE" columnName="dzien_sporzadzenia" columnDataType="datetime"/>
+
+        
+    </changeSet>
+</databaseChangeLog>

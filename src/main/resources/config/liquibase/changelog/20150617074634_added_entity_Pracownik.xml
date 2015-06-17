@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <property name="now" value="now()" dbms="mysql,h2"/>
+    <property name="now" value="current_timestamp" dbms="postgresql"/>
+
+    <!--
+        Added the entity Pracownik.
+    -->
+    <changeSet id="20150617074634" author="jhipster">
+        <createTable tableName="PRACOWNIK">
+            <column name="id" type="bigint" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="login" type="varchar(255)">
+                <constraints nullable="false" />
+            </column>
+            <column name="imie" type="varchar(255)"/>
+            <column name="nazwisko" type="varchar(255)"/>
+            <column name="pesel" type="varchar(255)"/>
+            <column name="nip" type="varchar(255)"/>
+            <column name="ulica" type="varchar(255)"/>
+            <column name="kod_pocztowy" type="varchar(255)"/>
+            <column name="miasto" type="varchar(255)"/>
+            <column name="pensja" type="decimal(10,2)"/>
+            <column name="data_zatrudnienia" type="date"/>
+            <column name="sekretariat" type="bit"/>
+            <column name="wydzial_gier" type="bit"/>
+            <column name="ksiegowosc" type="bit"/>
+            <column name="administracja" type="bit"/>
+            <column name="sedzia" type="bit"/>
+            <column name="opis" type="varchar(255)"/>
+        </createTable>
+        
+    </changeSet>
+</databaseChangeLog>

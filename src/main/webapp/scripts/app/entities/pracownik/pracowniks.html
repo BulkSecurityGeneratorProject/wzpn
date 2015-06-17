@@ -1,0 +1,240 @@
+<div>
+
+    <h2 translate="wzpnApp.pracownik.home.title">Pracownik</h2>
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#savePracownikModal" ng-click="clear()">
+        <span class="glyphicon glyphicon-flash"></span> <span translate="wzpnApp.pracownik.home.createLabel">Create a new Pracownik</span>
+    </button>
+    <div class="modal fade" id="savePracownikModal" tabindex="-1" role="dialog" aria-labelledby="myPracownikLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="editForm" role="form" novalidate ng-submit="create()" show-validation>
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" id="myPracownikLabel" translate="wzpnApp.pracownik.home.createOrEditLabel">Create or edit a Pracownik</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>ID</label>
+                            <input type="text" class="form-control" name="id"
+                                   ng-model="pracownik.id" readonly>
+                        </div>
+
+                        <div class="form-group">
+                            <label translate="wzpnApp.pracownik.login">Login</label>
+                            <input type="text" class="form-control" name="login"
+                                   ng-model="pracownik.login" required>
+
+                            <div ng-show="editForm.login.$invalid">
+                                <p class="help-block"
+                                   ng-show="editForm.login.$error.required" translate="entity.validation.required">
+                                    This field is required.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pracownik.imie">Imie</label>
+                            <input type="text" class="form-control" name="imie"
+                                   ng-model="pracownik.imie">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pracownik.nazwisko">Nazwisko</label>
+                            <input type="text" class="form-control" name="nazwisko"
+                                   ng-model="pracownik.nazwisko">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pracownik.pesel">Pesel</label>
+                            <input type="text" class="form-control" name="pesel"
+                                   ng-model="pracownik.pesel">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pracownik.nip">Nip</label>
+                            <input type="text" class="form-control" name="nip"
+                                   ng-model="pracownik.nip">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pracownik.ulica">Ulica</label>
+                            <input type="text" class="form-control" name="ulica"
+                                   ng-model="pracownik.ulica">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pracownik.kodPocztowy">KodPocztowy</label>
+                            <input type="text" class="form-control" name="kodPocztowy"
+                                   ng-model="pracownik.kodPocztowy">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pracownik.miasto">Miasto</label>
+                            <input type="text" class="form-control" name="miasto"
+                                   ng-model="pracownik.miasto">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pracownik.pensja">Pensja</label>
+                            <input type="number" class="form-control" name="pensja"
+                                   ng-model="pracownik.pensja">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pracownik.dataZatrudnienia">DataZatrudnienia</label>
+                            <input type="date" class="form-control" name="dataZatrudnienia"
+                                   ng-model="pracownik.dataZatrudnienia">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pracownik.sekretariat">Sekretariat</label>
+                            <input type="checkbox" class="form-control" name="sekretariat"
+                                   ng-model="pracownik.sekretariat">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pracownik.wydzialGier">WydzialGier</label>
+                            <input type="checkbox" class="form-control" name="wydzialGier"
+                                   ng-model="pracownik.wydzialGier">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pracownik.ksiegowosc">Ksiegowosc</label>
+                            <input type="checkbox" class="form-control" name="ksiegowosc"
+                                   ng-model="pracownik.ksiegowosc">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pracownik.administracja">Administracja</label>
+                            <input type="checkbox" class="form-control" name="administracja"
+                                   ng-model="pracownik.administracja">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pracownik.sedzia">Sedzia</label>
+                            <input type="checkbox" class="form-control" name="sedzia"
+                                   ng-model="pracownik.sedzia">
+
+                        </div>
+                        <div class="form-group">
+                            <label translate="wzpnApp.pracownik.opis">Opis</label>
+                            <input type="text" class="form-control" name="opis"
+                                   ng-model="pracownik.opis">
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="editForm.$invalid" class="btn btn-primary">
+                            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deletePracownikConfirmation">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form name="deleteForm" ng-submit="confirmDelete(pracownik.id)">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                                ng-click="clear()">&times;</button>
+                        <h4 class="modal-title" translate="entity.delete.title">Confirm delete operation</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p translate="wzpnApp.pracownik.delete.question" translate-values="{id: '{{pracownik.id}}'}">Are you sure you want to delete this Pracownik?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+                            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+                        </button>
+                        <button type="submit" ng-disabled="deleteForm.$invalid" class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th translate="wzpnApp.pracownik.login">Login</th>
+                    <th translate="wzpnApp.pracownik.imie">Imie</th>
+                    <th translate="wzpnApp.pracownik.nazwisko">Nazwisko</th>
+                    <th translate="wzpnApp.pracownik.pesel">Pesel</th>
+                    <th translate="wzpnApp.pracownik.nip">Nip</th>
+                    <th translate="wzpnApp.pracownik.ulica">Ulica</th>
+                    <th translate="wzpnApp.pracownik.kodPocztowy">KodPocztowy</th>
+                    <th translate="wzpnApp.pracownik.miasto">Miasto</th>
+                    <th translate="wzpnApp.pracownik.pensja">Pensja</th>
+                    <th translate="wzpnApp.pracownik.dataZatrudnienia">DataZatrudnienia</th>
+                    <th translate="wzpnApp.pracownik.sekretariat">Sekretariat</th>
+                    <th translate="wzpnApp.pracownik.wydzialGier">WydzialGier</th>
+                    <th translate="wzpnApp.pracownik.ksiegowosc">Ksiegowosc</th>
+                    <th translate="wzpnApp.pracownik.administracja">Administracja</th>
+                    <th translate="wzpnApp.pracownik.sedzia">Sedzia</th>
+                    <th translate="wzpnApp.pracownik.opis">Opis</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="pracownik in pracowniks">
+                    <td><a ui-sref="pracownikDetail({id:pracownik.id})">{{pracownik.id}}</a></td>
+                    <td>{{pracownik.login}}</td>
+                    <td>{{pracownik.imie}}</td>
+                    <td>{{pracownik.nazwisko}}</td>
+                    <td>{{pracownik.pesel}}</td>
+                    <td>{{pracownik.nip}}</td>
+                    <td>{{pracownik.ulica}}</td>
+                    <td>{{pracownik.kodPocztowy}}</td>
+                    <td>{{pracownik.miasto}}</td>
+                    <td>{{pracownik.pensja}}</td>
+                    <td>{{pracownik.dataZatrudnienia}}</td>
+                    <td>{{pracownik.sekretariat}}</td>
+                    <td>{{pracownik.wydzialGier}}</td>
+                    <td>{{pracownik.ksiegowosc}}</td>
+                    <td>{{pracownik.administracja}}</td>
+                    <td>{{pracownik.sedzia}}</td>
+                    <td>{{pracownik.opis}}</td>
+                    <td>
+                        <button type="submit"
+                                ui-sref="pracownikDetail({id:pracownik.id})"
+                                class="btn btn-info">
+                            <span class="glyphicon glyphicon-eye-open"></span>&nbsp;<span translate="entity.action.view"> View</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="update(pracownik.id)"
+                                class="btn btn-primary">
+                            <span class="glyphicon glyphicon-pencil"></span>&nbsp;<span translate="entity.action.edit"> Edit</span>
+                        </button>
+                        <button type="submit"
+                                ng-click="delete(pracownik.id)"
+                                class="btn btn-danger">
+                            <span class="glyphicon glyphicon-remove-circle"></span>&nbsp;<span translate="entity.action.delete"> Delete</span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <nav>
+            <ul class="pager">
+                <li ng-show="links['first']" ng-click="loadPage(links['first'])"><a href="#">&lt;&lt;</a></li>
+                <li ng-show="links['prev']" ng-click="loadPage(links['prev'])"><a href="#">&lt;</a></li>
+                <li ng-show="links['next']" ng-click="loadPage(links['next'])"><a href="#">&gt;</a></li>
+                <li ng-show="links['last']" ng-click="loadPage(links['last'])"><a href="#">&gt;&gt;</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>

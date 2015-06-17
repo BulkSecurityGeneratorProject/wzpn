@@ -1,0 +1,162 @@
+{
+    "relationships": [],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "login",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Login",
+            "fieldNameUnderscored": "login",
+            "fieldInJavaBeanMethod": "Login",
+            "fieldValidate": true,
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "imie",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Imie",
+            "fieldNameUnderscored": "imie",
+            "fieldInJavaBeanMethod": "Imie",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "nazwisko",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Nazwisko",
+            "fieldNameUnderscored": "nazwisko",
+            "fieldInJavaBeanMethod": "Nazwisko",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "pesel",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Pesel",
+            "fieldNameUnderscored": "pesel",
+            "fieldInJavaBeanMethod": "Pesel",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "nip",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Nip",
+            "fieldNameUnderscored": "nip",
+            "fieldInJavaBeanMethod": "Nip",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 6,
+            "fieldName": "ulica",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Ulica",
+            "fieldNameUnderscored": "ulica",
+            "fieldInJavaBeanMethod": "Ulica",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 7,
+            "fieldName": "kodPocztowy",
+            "fieldType": "String",
+            "fieldNameCapitalized": "KodPocztowy",
+            "fieldNameUnderscored": "kod_pocztowy",
+            "fieldInJavaBeanMethod": "KodPocztowy",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 8,
+            "fieldName": "miasto",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Miasto",
+            "fieldNameUnderscored": "miasto",
+            "fieldInJavaBeanMethod": "Miasto",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 9,
+            "fieldName": "pensja",
+            "fieldType": "BigDecimal",
+            "fieldNameCapitalized": "Pensja",
+            "fieldNameUnderscored": "pensja",
+            "fieldInJavaBeanMethod": "Pensja",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 10,
+            "fieldName": "dataZatrudnienia",
+            "fieldType": "LocalDate",
+            "fieldNameCapitalized": "DataZatrudnienia",
+            "fieldNameUnderscored": "data_zatrudnienia",
+            "fieldInJavaBeanMethod": "DataZatrudnienia",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 11,
+            "fieldName": "sekretariat",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "Sekretariat",
+            "fieldNameUnderscored": "sekretariat",
+            "fieldInJavaBeanMethod": "Sekretariat",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 12,
+            "fieldName": "wydzialGier",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "WydzialGier",
+            "fieldNameUnderscored": "wydzial_gier",
+            "fieldInJavaBeanMethod": "WydzialGier",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 13,
+            "fieldName": "ksiegowosc",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "Ksiegowosc",
+            "fieldNameUnderscored": "ksiegowosc",
+            "fieldInJavaBeanMethod": "Ksiegowosc",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 14,
+            "fieldName": "administracja",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "Administracja",
+            "fieldNameUnderscored": "administracja",
+            "fieldInJavaBeanMethod": "Administracja",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 15,
+            "fieldName": "sedzia",
+            "fieldType": "Boolean",
+            "fieldNameCapitalized": "Sedzia",
+            "fieldNameUnderscored": "sedzia",
+            "fieldInJavaBeanMethod": "Sedzia",
+            "fieldValidate": false
+        },
+        {
+            "fieldId": 16,
+            "fieldName": "opis",
+            "fieldType": "String",
+            "fieldNameCapitalized": "Opis",
+            "fieldNameUnderscored": "opis",
+            "fieldInJavaBeanMethod": "Opis",
+            "fieldValidate": false
+        }
+    ],
+    "fieldsContainOwnerManyToMany": false,
+    "fieldsContainOneToMany": false,
+    "fieldsContainLocalDate": true,
+    "fieldsContainCustomTime": true,
+    "fieldsContainBigDecimal": true,
+    "fieldsContainDateTime": false,
+    "fieldsContainDate": false,
+    "changelogDate": "20150617074634",
+    "pagination": "pager",
+    "validation": true
+}

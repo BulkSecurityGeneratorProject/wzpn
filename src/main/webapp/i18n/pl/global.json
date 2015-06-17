@@ -17,6 +17,8 @@
                 "pozycjaFaktury": "Pozycje faktury",
                 "usluga": "Usługi",
                 "polecenieZaplaty": "Polecenia zapłaty",
+                "pracownik": "Pracownik",
+                "sprawozdanie": "Sprawozdanie",
                 "additionalEntity": "JHipster will add additional entities here (do not translate!)"
             },
             "account": {
